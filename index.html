@@ -22,10 +22,10 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Introduction</a></li>
+							<li><a href="#currentflow">Current User Flow</a></li>
+							<li><a href="#heuristic">Heuristic Evaluation</a></li>
 							<li><a href="#personas">Personas</a></li>
 							<li><a href="#one">Problem Statements</a></li>
-							<li><a href="#two">What we do</a></li>
-							<li><a href="#three">Get in touch</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -44,26 +44,86 @@
 									<li>Login quicker</li>
 									<li>Browse / navigate easier regardless of type of devices used</li>
 									<li>Create player account(s) quicker</li>
-									<li>Allow for passing of player account(s) details to players</li>
+									<li>Allow for easier passing of player account(s) details to players</li>
 								</ul>
 							</p>
 							<h2>Who are our users?</h2>
 							<p>
-								Our users are the agents, including MA, SMA, who are using our agent site to create member. They are users who:
+								<b>Brief: </b>Our users are the agents, including MA, SMA, or VVIPs possibly who uses our agent site for:-
+								<ul>
+									<li>Manage downline (members / players) accounts' credit / balance / commission</li>
+									<li>Transfer downline balance</li>
+									<li>Checking reports (winloss / statement etc)</li>
+									<li><b>Member account(s) creation</b></li>
+								</ul>
 							</p>
 
 							<ul class="actions">
-								<li><a href="#personas" class="button scrolly">Personas</a></li>
+								<li><a href="#currentflow" class="button scrolly">Existing User Flow</a></li>
 							</ul>
 						</div>
 					</section>
 
-					<section id="personas" class="wrapper style2 fullscreen fade-up">
+				<!-- current user flow -->
+					<section id="currentflow" class="wrapper style2 fullscreen fade-up">
+						<div class="inner">
+							<h1>End-to-end User Flow for Member Creation</h1>
+							<h2>Login Flow</h2>
+							<a class="image" href="images/login_flow.png" data-lightbox="userflow" data-title="Login User Flowchart"><img class="main" src="images/login_flow.png" alt="Login User Flowchart" /></a>
+							<br />
+							<h4>Things to note for user flow:</h4>
+							<ul>
+								<li>Where do user go if they forget their username / password?</li>
+								<li>Security OTP / code will prompt if user last login IP and current login IP is different</li>
+								<li>If security OTP / code wasn't prompted at first after login, going pages under Member Mgmt, Transfer, Account, Security will prompt for it</li>
+							</ul>
+
+							<h2>Member Creation Flow</h2>
+							<a class="image" href="images/member_creation_flow.png" data-lightbox="userflow" data-title="Member Creation Flowchart"><img class="main" src="images/member_creation_flow.png" alt="Member Creation Flowchart" /></a>
+							<!-- <ul>
+								<li>Required fields are not stated</li>
+								<li>For copy settings to work, account creator need to know which account to copy from</li>
+								<li>There is a requirement for password creation which is stated at the <b>bottom</b> of the page</li>
+								<li>Validation code requires reading through hard-to-read images to get the validation</li>
+							</ul> -->
+
+							<ul class="actions">
+								<li><a href="#heuristic" class="button scrolly">Heuristic Evalulaton (Desktop)</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- heuristic evaluation -->
+					<section id="heuristic" class="wrapper style4 fullscreen fade-up">
+						<div class="inner">
+							<h2>Heuristic Evaluation for End-to-end Flow of Member Creation</h2>
+							<div class="features">
+								<section class="content section-title">Desktop View</section>
+								<section class="content section-title border-left">Tablet View</section>
+								<section class="content section-title border-left">Evalation</section>
+								<section class="content">
+									<a class="image" href="images/login.png" data-lightbox="heuristic" data-title="Login Page"><img class="main" src="images/login.png" alt="Login Page" /></a>
+								</section>
+								<section class="content border-left">
+									<a class="image" href="images/login_tablet.png" data-lightbox="heuristic" data-title="Login Page (Tablet)"><img class="main" src="images/login_tablet.png" alt="Login Page (Tablet)" /></a>
+								</section>
+								<section class="content border-left">
+									<h3>Fill in username/ password to login</h3>
+									<p>User can fill in given username/password and choose a language they prefer, then click on either "Sign In" or enter "Enter" on their keboard to submit form.</p>
+									<ul>Heuristic violated: 
+										<li>Error prevention (no option to recover lost password / username.</li>
+									</ul>
+								</section>
+							</div>
+					</section>
+
+				<!-- personas -->
+					<section id="personas" class="wrapper style3 fullscreen fade-up">
 						<div class="inner">
 							<h1>Personas</h1>
 							<section class="persona">
 								<div class="about">
-									<a class="image" href="images/persona1.jpg" data-lightbox="persona-1" data-title="Noah Chong">
+									<a class="image" alt="Noah Chong">
 										<img src="images/persona1.jpg">
 									</a>
 									<br />
@@ -97,7 +157,7 @@
 						</div>
 					</section>
 
-				<!-- One -->
+				<!-- problem statements -->
 					<section id="one" class="wrapper style2 fade-up">
 						<div class="inner">
 							<a href="#" class="image"><img class="main" src="images/problem_statements.png" alt=" problem-statements" /></a>
