@@ -27,6 +27,7 @@
 							<!-- <li><a href="#personas">Personas</a></li> -->
 							<li><a href="#statistics">Users Behaviour Statistics</a></li>
 							<li><a href="#clicks-tracking">Clicks Tracking</a></li>
+							<li><a href="#form-elements">Form Elements Research</a></li>
 							<!-- <li><a href="#sketches">Sketches Wireframe</a></li> -->
 						</ul>
 					</nav>
@@ -482,6 +483,9 @@
 									User Behaviour Flow 2 (Sept - Oct 2020)
 								</section>
 							</div> -->
+							<ul class="actions">
+								<li><a href="#clicks-tracking" class="button scrolly">Clicks / User Actions Tracking</a></li>
+							</ul>
 						</div>
 					</section>
 
@@ -728,6 +732,9 @@
 								</section>
 							</div>
 						</div>
+						<ul class="actions">
+							<li><a href="#form-elements" class="button scrolly">Form Elements Research</a></li>
+						</ul>
 					</div>
 				</section>
 
@@ -758,6 +765,187 @@
 							<a href="https://xd.adobe.com/view/5ba9e90c-819f-4dcb-9ed2-e495fb3771ea-0efa/" target="_blank">XD Wireframes</a>
 						</div>
 					</section> -->
+
+				<!-- Form Elements Research-->
+					<section id="form-elements" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h1>Form Elements Research</h1>
+							<div class="features form-labels">
+								<div class="section-row title-row">
+									Form Labels
+								</div>
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/form_label.png" data-lightbox="form-label" data-title="Static Label"><img class="main" src="images/form_label.png" alt="Static Label" /></a>
+										<a class="image" href="images/form_label1.png" data-lightbox="form-label" data-title="Static Label"><img class="main" src="images/form_label1.png" alt="Static Label" /></a>
+										1) Static label above input field
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/form_label2.png" data-lightbox="form-label" data-title="Floating Label"><img class="main" src="images/form_label2.png" alt="Floating Label" /></a>
+										2) Floating label
+									</section>
+									<section class="content border-left">
+										<table class="comparison">
+											<tr>
+												<th>1) Static Label</th>
+												<th>2) Floating Label</th>
+											</tr>
+											<tr>
+												<td>Higher readability, label color is darker.</td>
+												<td>If there are any text in placeholder, it's obvious it is a placeholder.</td>
+											</tr>
+											<tr>
+												<td>Space for hint is clear cut, either below label or below input field.</td>
+												<td>No option for placeholder as it's used for label, label might be long and got cropped off the input field as well.</td>
+											</tr>
+											<tr>
+												<td>Takes up static amount of space.</td>
+												<td>Seems to be space conducive, but as the labels will move from input field to top of input field, so theoretically works the same as static labels.</td>
+											</tr>
+											<tr class="icon-row">
+												<td><img class="tick" src="images/check.png" /></td>
+												<td><img class="cross" src="images/close.png" /></td>
+											</tr>
+										</table>
+									</section>
+								</div>
+							</div>
+							<div class="features form-labels">
+								<div class="section-row title-row">
+									Placeholder
+								</div>
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/form_placeholder.png" data-lightbox="form-label" data-title="Static Text Above Field"><img class="main" src="images/form_placeholder.png" alt="Static Text Above Field" /></a>
+										1) Static helper text above / below input field
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/form_placeholder1.png" data-lightbox="form-label" data-title="Classic Placeholder in Field"><img class="main" src="images/form_placeholder1.png" alt="Classic Placeholder in Field" /></a>
+										<a class="image" href="images/form_placeholder2.png" data-lightbox="form-label" data-title="Placeholder as Helper Text"><img class="main" src="images/form_placeholder2.png" alt="Placeholder as Helper Text" /></a>
+										2) Classic placeholder in input field
+									</section>
+									<section class="content border-left">
+										<table class="comparison">
+											<tr>
+												<th>1) Placeholder / helper text (above/below field)</th>
+												<th>2) Placeholder in input field</th>
+											</tr>
+											<tr>
+												<td>Would not get cut off regardless of text length.</td>
+												<td>Would get cut off if input field is shorter than placeholder length.</td>
+											</tr>
+											<tr>
+												<td>Since it's static, upon user input, the helper text is still there for user to see.</td>
+												<td>As the helper text appears in the input field, it will disappear once user input in it, it's harder to remember the text and can cause errors.</td>
+											</tr>
+											<tr>
+												<td>Higher readability, as it's of a darker color usually like label or slightly lighter.</td>
+												<td>Lighter color as it's meant to notify users that it is a placeholder and will disppear when users type into it.</td>
+											</tr>
+											<tr>
+												<td>Works for all browsers.</td>
+												<td>Placeholder attribute doesn't work in IE.</td>
+											</tr>
+											<tr class="icon-row">
+												<td><img class="tick" src="images/check.png" /></td>
+												<td><img class="cross" src="images/close.png" /></td>
+											</tr>
+										</table>
+									</section>
+								</div>
+							</div>
+
+							<div class="features form-labels">
+								<div class="section-row title-row">
+									Number Input
+								</div>
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/form_number.png" data-lightbox="form-label" data-title="Tiny Spinner in Input"><img class="main" src="images/form_number.png" alt="Tiny Spinner in Input" /></a>
+										1) Tiny spinner in input
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/form_number1.png" data-lightbox="form-label" data-title="Number Widget"><img class="main" src="images/form_number1.png" alt="Number Widget" /></a>
+										2) Number widget
+										<a class="image" href="images/form_number2.png" data-lightbox="form-label" data-title="Range Slider"><img class="main" src="images/form_number2.png" alt="Range Slider" /></a>
+										3) Range Slider
+									</section>
+									<section class="content border-left">
+										<table class="comparison three-col">
+											<tr>
+												<th>1) Tiny spinner in input</th>
+												<th>2) Number widget</th>
+												<th>3) Range Slider</th>
+											</tr>
+											<tr>
+												<td>Easy to make small adjustments.</td>
+												<td>Easy to make small adjustments.</td>
+												<td>Hard to make small adjustments or slide to a specific number.</td>
+											</tr>
+											<tr>
+												<td>Good for precise input value.</td>
+												<td>Unable to make a precise input value.</td>
+												<td>Have the option to input precise value or slide.</td>
+											</tr>
+											<tr>
+												<td>No limitations for how wide the range of number can be.</td>
+												<td>Hard to go through all the values if there are a huge amount of number in options.</td>
+												<td>No limitations for how wide the range of number can be, but also the wider the range, the harder it is to slide to a precise number, thus falling back on the input field.</td>
+											</tr>
+											<tr class="icon-row">
+												<td><img class="tick" src="images/check.png" /></td>
+												<td><img class="tick" src="images/check.png" /></td>
+												<td><img class="cross" src="images/close.png" /></td>
+											</tr>
+											<tr>
+												<td colspan="2">Number widget can be used for functionalities that does not have a lot of options and the options are of fixed values.</td>
+												<td></td>
+											</tr>
+										</table>
+									</section>
+								</div>
+							</div>
+
+							<div class="features form-labels">
+								<div class="section-row title-row">
+									Select Dropdown
+								</div>
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/form_select.png" data-lightbox="form-label" data-title="Classic Select Dropdown"><img class="main" src="images/form_select.png" alt="Classic Select Dropdown" /></a>
+										1) Classic select dropdown
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/form_select2.png" data-lightbox="form-label" data-title="Select Dropdown with Search"><img class="main" src="images/form_select2.png" alt="Select Dropdown with Search" /></a>
+										2) Select dropdown with search
+									</section>
+									<section class="content border-left">
+										<table class="comparison">
+											<tr>
+												<th>1) Classic select dropdown</th>
+												<th>2) Select dropdown with search</th>
+											</tr>
+											<tr>
+												<td>Able to show all available options, prevent mistypes / errors.</td>
+												<td>Able to show all available options, prevent mistypes / errors.</td>
+											</tr>
+											<tr>
+												<td>Requires a lot of scrolling if there are a lot of options.</td>
+												<td>Able to use search if user know what to look for, search can filter out some of the options so the list is not as long.</td>
+											</tr>
+											<tr class="icon-row">
+												<td><img class="tick" src="images/check.png" /></td>
+												<td><img class="tick" src="images/check.png" /></td>
+											</tr>
+											<tr>
+												<td colspan="2">Both can be used since search is not really required for select dropdowns that does not have a lot of options.</td>
+											</tr>
+										</table>
+									</section>
+								</div>
+							</div>
+						</div>
+					</section>
 			</div>
 
 		<!-- Footer -->

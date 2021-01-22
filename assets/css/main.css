@@ -2075,6 +2075,21 @@ input, select, textarea {
 		.features .section-row section:nth-child(3) {
 			width: 40%;
 		}
+		.features.form-labels .section-row section:first-child {
+			width: 20%;
+		}
+		.features.form-labels  .section-row section:nth-child(2) {
+			width: 20%;
+		}
+		.features.form-labels  .section-row section:nth-child(3) {
+			width: 60%;
+		}
+		.features .section-row.title-row {
+			padding: 10px;
+			font-weight: 500;
+			color: #fff;
+			font-size: 1.2em;
+		}
 		.features.full section {
 			width: 100%;
 			font-size: 0.9em;
@@ -4083,3 +4098,24 @@ input, select, textarea {
 			.persona ul.devices li img {
 				width: 50px;
 			}
+
+table.comparison {
+	color: #fff;
+}
+table.comparison th, table.comparison td {
+	padding: 0.5em;
+	width: 50%;
+}
+table.comparison.three-col th, table.comparison.three-col td {
+	width: 33.33%;
+}
+table.comparison th, td {
+	border: solid 1px rgba(255, 255, 255, 0.15);
+}
+table.comparison tr.icon-row {
+	text-align: center;
+}
+img.tick, img.cross {
+	width: 40px;
+	margin-top: 5px;
+}
