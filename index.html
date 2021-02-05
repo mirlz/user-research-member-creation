@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Hyperspace by HTML5 UP</title>
+		<title>User Research - Member Creation</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/lightbox.min.css"> 
@@ -23,12 +23,11 @@
 						<ul>
 							<li></li><a href="#intro">Introduction</a></li>
 							<li><a href="#currentflow">Current User Flow</a></li>
-							<li><a href="#heuristic">Heuristic Evaluation</a></li>
-							<!-- <li><a href="#personas">Personas</a></li> -->
 							<li><a href="#statistics">Users Behaviour Statistics</a></li>
-							<li><a href="#clicks-tracking">Clicks Tracking</a></li>
+							<li><a href="#color-scheming">Color Scheming</a></li>
 							<li><a href="#form-elements">Form Elements Research</a></li>
-							<!-- <li><a href="#sketches">Sketches Wireframe</a></li> -->
+							<li><a href="#heuristic">Heuristic Evaluation</a></li>
+							<li><a href="#clicks-tracking">Clicks Tracking</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -84,355 +83,11 @@
 							<h2>Member Creation Flow</h2>
 							<a class="image" href="images/member_creation_flow.png" data-lightbox="userflow" data-title="Member Creation Flowchart"><img class="main" src="images/member_creation_flow.png" alt="Member Creation Flowchart" /></a>
 
-							<ul class="actions">
-								<li><a href="#heuristic" class="button scrolly">Heuristic Evalulaton</a></li>
-							</ul>
 						</div>
 					</section>
-
-				<!-- heuristic evaluation -->
-					<section id="heuristic" class="wrapper style3 fullscreen fade-up">
-						<div class="inner">
-							<h1>Heuristic Evaluation</h1>
-							<h2>1. Login Flow</h2>
-							<div class="features">
-								<div class="section-row">
-									<section class="content section-title">Desktop View</section>
-									<section class="content section-title border-left">Tablet View</section>
-									<section class="content section-title border-left">Evalation</section>
-								</div>
-								<!-- login -->
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/login.png" data-lightbox="heuristic" data-title="Login Page"><img class="main" src="images/login.png" alt="Login Page" /></a>
-									</section>
-									<section class="content border-left">
-										<a class="image" href="images/login_tablet.png" data-lightbox="heuristic" data-title="Login Page (Tablet)"><img class="main" src="images/login_tablet.png" alt="Login Page (Tablet)" /></a>
-									</section>
-									<section class="content border-left">
-										<h3>1.1 Fill in username/ password to login</h3>
-										<p>There is no help for lost username / password.</p>
-										<p>There is no way for user to see what has been entered into password field already, no way to discover if there are any typo errors.</p>
-										Heuristic violated: 
-										<ul>
-											<li>Error prevention</li>
-											<li>Help users recognize, diagnose and recover from errors</li>
-											<li>Match between the website and the real world</li>
-										</ul>
-									</section>
-								</div>
-								<!--security code if last login different IP  -->
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/login_security.png" data-lightbox="heuristic" data-title="Security Code Page - After Login"><img class="main" src="images/login_security.png" alt="Security Code Page - After Login" /></a>
-									</section>
-									<section class="content border-left">
-										<a class="image" href="images/login_security_tablet.png" data-lightbox="heuristic" data-title="Security Code Page - After Login (Tablet)"><img class="main" src="images/login_security_tablet.png" alt="Security Code Page - After Login (Tablet)" /></a>
-									</section>
-									<section class="content border-left">
-										<h3>1.2 User have to input security code / OTP if current IP does not match last login IP</h3>
-										<p>If last login IP does not match current IP, user will be brought to this page to input either user's preset security code or a unique OTP will be sent to device's preferred contact method.</p>
-										<p>This is a disruptive step especially if user set a different OTP method as then user would have to either check sms / email to input security code.</p>
-										Heuristic violated: 
-										<ul>
-											<li>Recognition or recall</li>
-											<li>Flexibility and efficiency of use</li>
-										</ul>
-									</section>
-								</div>
-								<!-- t & c -->
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/t&c.png" data-lightbox="heuristic" data-title="Terms & Conditions Page"><img class="main" src="images/t&c.png" alt="Terms & Conditions Page" /></a>
-									</section>
-									<section class="content border-left">
-										<a class="image" href="images/t&c_tablet.png" data-lightbox="heuristic" data-title="Terms & Conditions Page (Tablet)"><img class="main" src="images/t&c_tablet.png" alt="Terms & Conditions Page (Tablet)" /></a>
-									</section>
-									<section class="content border-left">
-										<h3>1.3 User have to agree to T&C everytime upon login</h3>
-										<p>When the user successfully login, he will be brought to the "Terms and Conditions" page where he will have to click on "I Agree" button, doing otherwise would log him out and bring him back to the login screen.</p>
-										<p>This is unnecessary as it's an additional page.</p>
-										Heuristic violated: 
-										<ul>
-											<li>Error prevention</li>
-											<li>Aesthetics and minimalist design</li>
-											<li>Flexibility and efficiency of use</li>
-										</ul>
-									</section>
-								</div>
-							</div>
-							<br />
-							<h2>2. Member Creation Flow</h2>
-							<div class="features">
-								<div class="section-row">
-									<section class="content section-title">Desktop View</section>
-									<section class="content section-title border-left">Tablet View</section>
-									<section class="content section-title border-left">Evalation</section>
-								</div>
-								<!-- landing page -->
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/landing.png" data-lightbox="heuristic" data-title="Landing Page"><img class="main" src="images/landing.png" alt="Landing Page" /></a>
-									</section>
-									<section class="content border-left">
-										<a class="image" href="images/landing_tablet.png" data-lightbox="heuristic" data-title="Landing Page (Tablet)"><img class="main" src="images/landing_tablet.png" alt="Landing Page (Tablet)" /></a>
-									</section>
-									<section class="content border-left">
-										<h3>2.1 User directed to landing page after login</h3>
-										<p>On reaching landing page, need to look out for where to navigate to go to create an account.</p>
-										Heuristic violated: 
-										<ul>
-											<li>Aesthetics and minimalist design</li>
-											<li>Flexibility and efficiency of use</li>
-										</ul>
-									</section>
-								</div>
-								<!-- inner security code page -->
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/inner_security_code.png" data-lightbox="heuristic" data-title="Security Code - Inner Pages"><img class="main" src="images/inner_security_code.png" alt="Security Code - Inner Pages" /></a>
-									</section>
-									<section class="content border-left">
-										<a class="image" href="images/inner_security_code_tablet.png" data-lightbox="heuristic" data-title="Security Code - Inner Pages (Tablet)"><img class="main" src="images/inner_security_code_tablet.png" alt="Security Code - Inner Pages (Tablet)" /></a>
-									</section>
-									<section class="content border-left">
-										<h3>2.2 User directed to security code / OTP page</h3>
-										<p>If user were not prompted security code after login (due to difference in IP from last login), then on visiting pages under Member Mgmt / Transfer / Account / Security, user would be prompted with security code / OTP verification.</p>
-										Heuristic violated: 
-										<ul>
-											<li>Recognition or recall</li>
-											<li>Flexibility and efficiency of use</li>
-										</ul>
-									</section>
-								</div>
-								<!-- create member page -->
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/create_member.png" data-lightbox="heuristic" data-title="Create Member Page"><img class="main" src="images/create_member.png" alt="Create Member Page" /></a>
-									</section>
-									<section class="content border-left">
-										<a class="image" href="images/create_member_tablet.png" data-lightbox="heuristic" data-title="Create Member Page (Tablet)"><img class="main" src="images/create_member_tablet.png" alt="Create Member Page (Tablet)" /></a>
-									</section>
-									<section class="content border-left">
-										<h3>2.3 Clicking on Member Mgmt > New Member</h3>
-										<ol class="r">
-											<li>Need prior knowledge of which account to copy settings from</li>
-											<li>Have to try multiple times for a unique ID that has not been used</li>
-											<li>Have to scroll to bottom to check password requirements, no real time check</li>
-											<li>Optional but not stated, what is required / optional? Do we really need this section?</li>
-											<li>Outdated recaptcha, hard to read</li>
-											<li>On error submission, no highlighting for errors. With this many fields, how to enable to bulk creation?</li>
-											<li>Unorthodox requirement of password not allowed to contain first / last name and username</li>
-										</ol>
-										<ul>
-											<li>Recognition or recall</li>
-											<li>Aesthetics and minimalist design</li>
-											<li>Match between the website and the real world</li>
-											<ll>Help users recognize, diagnose and recover from errors</ll>
-										</ul>
-									</section>
-								</div>
-								<!-- error submission page -->
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/create_member_error.png" data-lightbox="heuristic" data-title="Create Member Page - Error"><img class="main" src="images/create_member_error.png" alt="Create Member Page - Error" /></a>
-									</section>
-									<section class="content border-left">
-										<a class="image" href="images/create_member_error_tablet.png" data-lightbox="heuristic" data-title="Create Member Page - Error (Tablet)"><img class="main" src="images/create_member_error_tablet.png" alt="Create Member Page - Error (Tablet)" /></a>
-									</section>
-									<section class="content border-left">
-										<h3>2.4 Form submission - error</h3>
-										<p>On submission, fields that are empty but required, or does not fulfill the min / max requirements will return an alert error. However, error checking are done on top - bottom / priority basis, as the password requirements are not fulfilled,the error only showed password but did not contain error for credit / max bet that went over the limit. </p>
-										Heuristic violated: 
-										<ul>
-											<li>Help users recognize, diagnose and recover from errors</li>
-											<li>Match between the website and the real world</li>
-										</ul>
-									</section>
-								</div>
-								<!-- successful submission page -->
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/create_member_success.png" data-lightbox="heuristic" data-title="Create Member Page - Success"><img class="main" src="images/create_member_success.png" alt="Create Member Page - Success" /></a>
-									</section>
-									<section class="content border-left">
-										<a class="image" href="images/create_member_success_tablet.png" data-lightbox="heuristic" data-title="Create Member Page - Success (Tablet)"><img class="main" src="images/create_member_success_tablet.png" alt="Create Member Page - Success (Tablet)" /></a>
-									</section>
-									<section class="content border-left">
-										<h3>2.5 Form submission - success</h3>
-										<p>Upon successful submmission of form, a member account is created. A successful alert will pop up that indicates that a new account has been successfully created.</p>
-										<p>On clicking "Ok", the create member page will refresh with all fields reset.</p>
-										Heuristic violated: 
-										<ul>
-											<li>Match between the website and the real world</li>
-										</ul>
-									</section>
-								</div>
-							</div>
-							<ul class="actions">
-								<li><a href="#statistics" class="button scrolly">Users Behaviour Statistics</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- personas -->
-					<!-- <section id="personas" class="wrapper style3 fullscreen fade-up">
-						<div class="inner">
-							<h1>Personas</h1>
-							<section class="persona">
-								<div class="about">
-									<a class="image" alt="Noah Chong">
-										<img src="images/persona1.jpg">
-									</a>
-									<br />
-									<h3>Noah Chong</h3>
-									<span>Age: 33</span><br />
-									<span>Residence: Indonesia, Jakarta</span><br />
-									<span># of players: 5 ~ 10</span><br />
-									<span>Marital status: Single | No children</span><br />
-									<hr></hr>
-									<blockquote>"I am always on the go, so I pretty much do everything on either my phone or my tablet. It will be good if all websites are catered more for smaller devices, other it is hard to navigate and use the system."</blockquote>
-									<hr></hr>
-								</div>
-								<div class="profile">
-									<h3>Profile</h3>
-									<p>
-										Noah is a part-time agent who have a small pool of players under him, as he has a full time sales job that provides a more flexible working hours. This enable him to manage his current players during his off time, usually he gets new players from word of mouth by his players. 
-									</p>
-									<p>
-										Since he does not have much time managing, he is satisfied with his current amount of players, but he is okay as well to have more players under him. However, as he has a full time job, he would usually be more on the go during working hours and thus would not be stationary most of the time.
-									</p>
-									<h3>Devices Owned</h3>
-									<ul class="devices">
-										<li><img src="images/laptop.png"></li>
-										<li><img src="images/tablet.png"></li>
-										<li><img src="images/phone.png"></li>
-									</ul>
-								</div>
-								<div class="skills">
-									<h3>Tech knowledge</h3>
-									<div class="progressBar">
-										<span>Internet</span>
-										<div class="progressBarContainer">
-										  <div class="progressBarValue value-90"></div>
-										</div>
-										<span>Mobile Apps</span>
-										<div class="progressBarContainer">
-										  <div class="progressBarValue value-80"></div>
-										</div>
-										<span>Early Adopters</span>
-										<div class="progressBarContainer">
-										  <div class="progressBarValue value-50"></div>
-										</div>
-										<span>Gadgets</span>
-										<div class="progressBarContainer">
-										  <div class="progressBarValue value-60"></div>
-										</div>
-										<span>Social Media</span>
-										<ul class="icons">
-											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										</ul>
-									</div>
-									<h3>Pain Points / Frustrations</h3>
-									<ul>
-										<li>Slow internet speed</li>
-										<li>The SBOBET agent site is hard to browse on phone</li>
-										<li>Not enough time to manage all the players</li>
-										<li>How to create accounts faster?</li>
-									</ul>
-									<h3>Goals & Needs</h3>
-									<ul>
-										<li>Need better website experience especially for mobile devices</li>
-										<li>Need a better way of managing players</li>
-										<li>Does not want to spend too much time on managing players</li>
-									</ul>
-								</div>
-							</section>
-						</div>
-						<hr></hr>
-						<section class="wrapper style3 fullscreen fade-up">
-							<div class="inner">
-								<section class="persona">
-									<div class="about">
-										<a class="image" alt="Steven Chua">
-											<img src="images/persona2.jpg">
-										</a>
-										<br />
-										<h3>Steven Chua</h3>
-										<span>Age: 48</span><br />
-										<span>Residence: Indonesia, Jakarta</span><br />
-										<span># of players: 300 ~ 500</span><br />
-										<span>Marital status: Married | No children</span><br />
-										<hr></hr>
-										<blockquote>"I don't usually directly contact my players, my agents help to manage them instead. My agents help me to consolidate the statements including contacting the relevant parties to generate the reports."</blockquote>
-										<hr></hr>
-									</div>
-									<div class="profile">
-										<h3>Profile</h3>
-										<p>
-											Steven does not personally handle things when it comes to players. Instead, the agents under him will help him to manage the players directly and consolidate the statements into reports and pass it to him.
-										</p>
-										<p>
-											He is not very tech savvy, and does not like to use the SBOBET systems. If there is any need to create account for players, his agents will help to do it in his stead. His main motivation currently is to recuit more players to earn a higher commission for himself and his agents.
-										</p>
-										<h3>Devices Owned</h3>
-										<ul class="devices">
-											<li><img src="images/computer.png"></li>
-											<li><img src="images/laptop.png"></li>
-											<li><img src="images/tablet.png"></li>
-											<li><img src="images/phone.png"></li>
-										</ul>
-									</div>
-									<div class="skills">
-										<h3>Tech knowledge</h3>
-										<div class="progressBar">
-											<span>Internet</span>
-											<div class="progressBarContainer">
-											<div class="progressBarValue value-40"></div>
-											</div>
-											<span>Mobile Apps</span>
-											<div class="progressBarContainer">
-											<div class="progressBarValue value-30"></div>
-											</div>
-											<span>Early Adopters</span>
-											<div class="progressBarContainer">
-											<div class="progressBarValue value-40"></div>
-											</div>
-											<span>Gadgets</span>
-											<div class="progressBarContainer">
-											<div class="progressBarValue value-70"></div>
-											</div>
-											<span>Social Media</span>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											</ul>
-										</div>
-										<h3>Pain Points / Frustrations</h3>
-										<ul>
-											<li>How to get more players</li>
-											<li>How to I get updates faster?</li>
-											<li>Catching agents anytime is tough</li>
-											<li>Too many documents to go through</li>
-										</ul>
-										<h3>Goals & Needs</h3>
-										<ul>
-											<li>How to better manage agents</li>
-											<li>To get more players and more profit</li>
-											<li>Is there a way to automate processes?</li>
-										</ul>
-									</div>
-								</section>
-								<ul class="actions">
-									<li><a href="#statistics" class="button scrolly">Users Behaviour Statistics</a></li>
-								</ul>
-							</div>
-						</section>
-					</section> -->
 
 				<!-- statistics -->
-					<section id="statistics" class="wrapper style4 fade-up">
+					<section id="statistics" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h1>User Statistics from GA</h1>
 							<h3>Most Visited Pages</h3>
@@ -472,302 +127,37 @@
 								<section></section>
 							</div>
 							<hr></hr>
-							<!-- <h3>User Behaviour Flow</h3>
-							<div class="ga features">
-								<section>
-									<a class="image" href="images/user_behaviour_1.png" data-lightbox="statistics" data-title="User Behaviour Flow 1 (Sept - Oct 2020)"><img class="main" src="images/user_behaviour_1.png" alt="User Behaviour Flow 1 (Sept - Oct 2020)" /></a>
-									User Behaviour Flow 1 (Sept - Oct 2020)
-								</section>
-								<section>
-									<a class="image" href="images/user_behaviour_2.png" data-lightbox="statistics" data-title="User Behaviour Flow 2 (Sept - Oct 2020)"><img class="main" src="images/user_behaviour_2.png" alt="User Behaviour Flow 2 (Sept - Oct 2020)" /></a>
-									User Behaviour Flow 2 (Sept - Oct 2020)
-								</section>
-							</div> -->
-							<ul class="actions">
-								<li><a href="#clicks-tracking" class="button scrolly">Clicks / User Actions Tracking</a></li>
-							</ul>
 						</div>
 					</section>
 
-				<!-- clicks tracking -->
-				<section id="clicks-tracking" class="wrapper style1 fade-up">
+				<!-- Color scheming -->
+				<section id="color-scheming" class="wrapper style4 fade-up">
 					<div class="inner">
-						<h1>Clicks / User Actions Tracking</h1>
-						<h2>Current Libra</h2>
-						<p>Note: number listed is the number of clicks applied by user.</p>
-						<div class="features">
-							<div class="section-row">
-								<section class="content">
-									<a class="image" href="images/click_login.png" data-lightbox="clicks" data-title="Login Page"><img class="main" src="images/click_login.png" alt="Login Page" /></a>
-								</section>
-								<section class="content border-left">
-									<a class="image" href="images/click_tnc.png" data-lightbox="clicks" data-title="T&C Page"><img class="main" src="images/click_tnc.png" alt="T&C Page" /></a>
-								</section>
-								<section class="content border-left">
-									1. Click on Login Name field -> enter login Name <br />
-									2. Click on Password field -> enter password <br />
-									(Additional 2 clicks might occur for changing of language) <br />
-									3. Click on Sign in button <br />
-									4. Click to agree to T&C <br />
-									(Or click to disagree and start from login page again)
-								</section>
-							</div>
-							<div class="section-row">
-								<section class="content">
-									<a class="image" href="images/click_dashboard.png" data-lightbox="clicks" data-title="Dashboard Page"><img class="main" src="images/click_dashboard.png" alt="Dashboard Page" /></a>
-								</section>
-								<section class="content border-left">
-									<a class="image" href="images/click_securitycode.png" data-lightbox="clicks" data-title="Security Code Page"><img class="main" src="images/click_securitycode.png" alt="Security Code Page" /></a>
-								</section>
-								<section class="content border-left">
-									5. Click on Member Mgmt to show sub menu items <br />
-									6. Click on New Member to go to create member page <br />
-									7. Click on 1<sup>st</sup> Digit field, after filling in, focus will automatically go to the subsequent field <br />
-									8. Click on Submit button
-								</section>
-							</div>
+						<h1>Color Scheming</h1>
+						<div class="color features">
+							<section>
+								<a class="image" href="images/colorscheme1.png" data-lightbox="colorscheme" data-title="Typography"><img class="main" src="images/colorscheme1.png" alt="Typography" /></a>
+								Typography
+							</section>
+							<section class="border-left">
+								<a class="image" href="images/colorscheme4.png" data-lightbox="colorscheme" data-title="Primary Color"><img class="main" src="images/colorscheme4.png" alt="Primary Color" /></a>
+								Primary Color
+							</section>
+							<section class="border-top">
+								<a class="image" href="images/colorscheme2.png" data-lightbox="colorscheme" data-title="Color Scheming"><img class="main" src="images/colorscheme2.png" alt="Color Scheming" /></a>
+								Color Scheming
+							</section>
+							<section class="border-top">
+								<a class="image" href="images/colorscheme3.png" data-lightbox="colorscheme" data-title="Elements UI"><img class="main" src="images/colorscheme3.png" alt="Elements UI" /></a>
+								Elements UI
+							</section>
 						</div>
-						<h3>Quick Creation w/o Copy Settings - Create Member Page</h3>
-						<div class="features">
-							<div class="section-row">
-								<section class="content">
-									<a class="image" href="images/click_createmember.png" data-lightbox="clicks" data-title="Create Member Page"><img class="main" src="images/click_createmember.png" alt="Create Member Page" /></a>
-								</section>
-								<section class="content border-left">
-									<a class="image" href="images/click_success.png" data-lightbox="clicks" data-title="Member Created Dialog"><img class="main" src="images/click_success.png" alt="Member Created Dialog" /></a>
-								</section>
-								<section class="content border-left">
-									9: Click on 1<sup>st</sup> field to show other options <br />
-									10: Click on options shown from 9 <br />
-									11&12: Same as 9&10 <br />
-									13&14: Same as 9&10 <br />
-									15: Click on password field -> enter password <br />
-									(password might not pass, scroll down to check password policy) <br />
-									16: Click on validation field -> enter validation code <br />
-									(old style validation might not be clear for certain images) <br />
-									17: Click on Create button
-									18: Click on OK button to acknowledge successful account creation
-								</section>
-							</div>
-							<div class="section-row">
-								<section class="content"></section>
-								<section class="content"></section>
-								<section class="content align-right">
-									Total number of clicks incl. starting from login: <b>17</b> <br />
-									Number of clicks just for quick creation w/o copy settings: <b>9</b>
-								</section>
-							</div>
-						</div>
-						<h3>Quick Creation with Copy Settings - Create Member Page</h3>
-						<div class="features">
-							<div class="section-row">
-								<section class="content">
-									<a class="image" href="images/click_copysettings.png" data-lightbox="clicks" data-title="Create Member (Show Copy Settings)"><img class="main" src="images/click_copysettings.png" alt="Create Member (Show Copy Settings)" /></a>
-								</section>
-								<section class="content border-left">
-									<a class="image" href="images/click_copysettings2.png" data-lightbox="clicks" data-title="Create Member Page (With Copy Settings)"><img class="main" src="images/click_copysettings2.png" alt="Create Member Page (With Copy Settings)" /></a>
-								</section>
-								<section class="content border-left">
-									9: Click on account ID field to show options <br />
-									10: Click on 1 of the options to copy settings from <br />
-									11: Click on copy settings button to confirm action<br />
-									12: Click on 1<sup>st</sup> field to show other options <br />
-									13: Click on options shown from 12 <br />
-									14&15: Same as 12&13 <br />
-									16&17: Same as 12&13 <br />
-									18: Click on password field -> enter password <br />
-									19: Click on validation field -> enter validation <br />
-								</section>
-							</div>
-							<div class="section-row">
-								<section class="content">
-									<a class="image" href="images/click_copysettings_success.png" data-lightbox="clicks" data-title="Member Created Dialog"><img class="main" src="images/click_copysettings_success.png" alt="Member Created Dialog" /></a>
-								</section>
-								<section class="content border-left"></section>
-								<section class="content border-left">
-									20: Click on OK button to acknowledge successful account creation
-								</section>
-							</div>
-							<div class="section-row">
-								<section class="content"></section>
-								<section class="content"></section>
-								<section class="content align-right">
-									Total number of clicks incl. starting from login: <b>20</b> <br />
-									Number of clicks just for quick creation with copy settings: <b>12</b>
-								</section>
-							</div>
-						</div>
+						<hr></hr>
 					</div>
 				</section>
-
-				<section class="wrapper style2 fade-up">
-					<div class="inner">
-						<h1>Clicks / User Actions Tracking</h1>
-						<h2>Libra Revamp</h2>
-						<p>Note: number listed is the number of clicks applied by user.</p>
-						<div class="features">
-							<div class="section-row">
-								<section class="content">
-									<a class="image" href="images/click2_login.png" data-lightbox="clicks" data-title="Login Page"><img class="main" src="images/click2_login.png" alt="Login Page" /></a>
-								</section>
-								<section class="content border-left">
-									<a class="image" href="images/click2_dashboard.png" data-lightbox="clicks" data-title="Dashboard"><img class="main" src="images/click2_dashboard.png" alt="Dashboard" /></a>
-								</section>
-								<section class="content border-left">
-									1. Click on Login Name field -> enter login Name <br />
-									2. Click on Password field -> enter password <br />
-									(Additional 2 clicks might occur for changing of language) <br />
-									3. Click on Sign in button <br />
-									(Additional click for if users want to check out the T&C page) <br />
-									4. Click on either quick actions' 2<sup>nd</sup> page for create member quick action or on side menu's Member Management <br />
-									5. Click on Create Member quick action on dashboard or on sub menu's New Member menu item
-								</section>
-							</div>
-							<div class="section-row">
-								<section class="content">
-									<a class="image" href="images/click2_securitycode.png" data-lightbox="clicks" data-title="Security Code Page"><img class="main" src="images/click2_securitycode.png" alt="Security Code Page" /></a>
-								</section>
-								<section class="content border-left"></section>
-								<section class="content border-left">
-									6. Click on 1<sup>st</sup> Digit field, after filling in, focus will automatically go to the subsequent field <br />
-									7. Click on Submit button
-								</section>
-							</div>
-						</div>
-						<h3>Quick Creation w/o Copy Settings - Create Member Page</h3>
-						<div class="features">
-							<div class="section-row">
-								<section class="content border-left">
-									<a class="image" href="images/click2_createmember.png" data-lightbox="clicks" data-title="Create Member Page"><img class="main" src="images/click2_createmember.png" alt="Create Member Page" /></a>
-								</section>
-								<section class="content">
-									<a class="image" href="images/click2_createconfirm.png" data-lightbox="clicks" data-title="Create Confirmation Dialog"><img class="main" src="images/click2_createconfirm.png" alt="Create Confirmation Dialog" /></a>
-								</section>								<section class="content border-left">
-									8. Click on Account ID field to show options for available account ID <br />
-									9. Click to select 1 of the options from 6 <br />
-									10. Either click on password field to input password manually or click on button to generate password that fits the password policy <br />
-									11. Click on Quick Create Account to bypass account settings for different products <br />
-									12. Click to confirm account creation action <br />
-									(Or click on cancel to make changes)
-								</section>
-							</div>
-							<div class="section-row">
-								<section class="content"></section>
-								<section class="content"></section>
-								<section class="content align-right">
-									Total number of clicks incl. starting from login: <b>12</b> <br />
-									Number of clicks just for quick creation w/o copy settings: <b>5</b>
-								</section>
-							</div>
-						</div>
-						<h3>Quick Creation with Copy Settings - Create Member Page</h3>
-						<div class="features">
-							<div class="section-row">
-								<section class="content">
-									<a class="image" href="images/click2_createmembercopy.png" data-lightbox="clicks" data-title="Create Member Page (Copy Settings)"><img class="main" src="images/click2_createmembercopy.png" alt="Create Member Page (Copy Settings)" /></a>
-								</section>
-								<section class="content border-left">
-									<a class="image" href="images/click2_createmembercopy.png" data-lightbox="clicks" data-title="Create Member Page (Copy Settings)"><img class="main" src="images/click2_createmembercopy.png" alt="Create Member Page (Copy Settings & Profile Setting)" /></a>
-								</section>
-								<section class="content border-left">
-									8. Click on Copy Settings to show Copy Settings option <br />
-									9. Click on copy settings field to show account list options
-									10. Choose which account ID to copy settings from 
-									11. Click on Account ID field to show options for available account ID <br />
-									12. Click to select 1 of the options from 11 <br />
-									13. Either click on password field to input password manually or click on button to generate password that fits the password policy <br /> 
-									14. Click on Quick Create Account to bypass account settings for different products <br />
-									(Or click on Edit Account Settings to go to the net page for setting account settings for different products)
-								</section>
-							</div>
-							<div class="section-row">
-								<section class="content">
-									<a class="image" href="images/click2_createconfirmcopy.png" data-lightbox="clicks" data-title="Member Created Dialog"><img class="main" src="images/click2_createconfirmcopy.png" alt="Member Created Dialog" /></a>
-								</section>
-								<section class="content border-left"></section>
-								<section class="content border-left">
-									15. Click on OK button to acknowledge successful account creation
-								</section>
-							</div>
-							<div class="section-row">
-								<section class="content"></section>
-								<section class="content"></section>
-								<section class="content align-right">
-									Total number of clicks incl. starting from login: <b>15</b> <br />
-									Number of clicks just for quick creation w/o copy settings: <b>8</b>
-								</section>
-							</div>
-						</div>
-						<h3>Comparison Chart for Create Member Page only</h3>
-						<div class="features">
-							<div class="section-row">
-								<section class="content"></section>
-								<section class="content border-left align-center">
-									Number of Clicks w/o Copy Settings
-								</section>
-								<section class="content border-left align-center">
-									Number of Clicks with Copy Settings
-								</section>
-							</div>
-							<div class="section-row">
-								<section class="content align-center">
-									Current Libra
-								</section>
-								<section class="content border-left align-center">
-									9
-								</section>
-								<section class="content border-left align-center">
-									12
-								</section>
-							</div>
-							<div class="section-row">
-								<section class="content align-center">
-									Libra Revamp
-								</section>
-								<section class="content border-left align-center">
-									5
-								</section>
-								<section class="content border-left align-center">
-									8
-								</section>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><a href="#form-elements" class="button scrolly">Form Elements Research</a></li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- sketches -->
-					<!-- <section id="sketches" class="wrapper style2 fade-up">
-						<div class="inner">
-							<h1>Sketches Wireframe</h1>
-							<div class="ga features">
-								<section>
-									<a class="image" href="images/wireframe_login.jpg" data-lightbox="sketches" data-title="Sketch Wireframe - Login"><img class="main" src="images/wireframe_login.jpg" alt="Sketch Wireframe - Login" /></a>
-									Sketch Wireframe - Login
-								</section>
-								<section>
-									<a class="image" href="images/wireframe_landing.jpg" data-lightbox="sketches" data-title="Sketch Wireframe - Landing Page"><img class="main" src="images/wireframe_landing.jpg" alt="Sketch Wireframe - Landing Page" /></a>
-									Sketch Wireframe - Landing Page
-								</section>
-							</div>
-							<div class="ga features">
-								<section>
-									<a class="image" href="images/wireframe_create.jpg" data-lightbox="sketches" data-title="Sketch Wireframe - Create Single Member"><img class="main" src="images/wireframe_create.jpg" alt="Sketch Wireframe - Create Single Member" /></a>
-									Sketch Wireframe - Create Single Member
-								</section>
-								<section>
-									<a class="image" href="images/wireframe_created_success.jpg" data-lightbox="sketches" data-title="Sketch Wireframe - Create Single Member - success"><img class="main" src="images/wireframe_created_success.jpg" alt="Sketch Wireframe - Create Single Member - success" /></a>
-									Sketch Wireframe - Create Single Member - success
-								</section>
-							</div>
-							<a href="https://xd.adobe.com/view/5ba9e90c-819f-4dcb-9ed2-e495fb3771ea-0efa/" target="_blank">XD Wireframes</a>
-						</div>
-					</section> -->
 
 				<!-- Form Elements Research-->
-					<section id="form-elements" class="wrapper style3 fade-up">
+					<section id="form-elements" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h1>Form Elements Research</h1>
 							<div class="features form-labels">
@@ -941,6 +331,460 @@
 												<td colspan="2">Both can be used since search is not really required for select dropdowns that does not have a lot of options.</td>
 											</tr>
 										</table>
+									</section>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- heuristic evaluation -->
+				<section id="heuristic" class="wrapper style2 fullscreen fade-up">
+					<div class="inner">
+						<h1>Heuristic Evaluation</h1>
+						<h2>1. Login Flow</h2>
+						<div class="features form-labels">
+							<div class="section-row">
+								<section class="content section-title">Current Libra</section>
+								<section class="content section-title border-left">Revamp</section>
+								<section class="content section-title border-left">Heuristic Evalation</section>
+							</div>
+							<!-- login -->
+							<div class="section-row">
+								<section class="content">
+									<a class="image" href="images/login.png" data-lightbox="heuristic" data-title="Login Page"><img class="main" src="images/login.png" alt="Login Page" /></a>
+									Login Page
+								</section>
+								<section class="content border-left">
+									<a class="image" href="images/revamp_login.png" data-lightbox="heuristic" data-title="Login Page (Revamp)"><img class="main" src="images/revamp_login.png" alt="Login Page (Revamp)" /></a>
+									<a class="image" href="images/revamp_login2.png" data-lightbox="heuristic" data-title="Login Page (Revamp)"><img class="main" src="images/revamp_login2.png" alt="Login Page (Revamp)" /></a>
+									Login Page (Revamp)
+								</section>
+								<section class="content border-left">
+									<table class="comparison">
+										<tr>
+											<th>Current Libra</th>
+											<th>Revamp</th>
+										</tr>
+										<tr>
+											<td>No help for lost username / password</td>
+											<td>Provide help to retrieve lost username / password with contact us</td>
+										</tr>
+										<tr>
+											<td>Unable to see what has been entered in password field already</td>
+											<td>An eye icon to see what has already been entered in password field</td>
+										</tr>
+										<tr>
+											<td>NA</td>
+											<td>Option to save login so user will stay logged in for 7 days</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="list-title">Heuristic violated: </div>
+												<ul>
+													<li>Error prevention</li>
+													<li>Help users recognize, diagnose and recover from errors</li>
+													<li>Match between the website and the real world</li>
+												</ul>
+											</td>
+											<td>
+												<div class="list-title">Heuristic applied: </div>
+												<ul>
+													<li>Error prevention</li>
+													<li>Help users recognize, diagnose and recover from errors</li>
+													<li>Match between the website and the real world</li>
+													<li>Flexibility and efficiency of use</li>
+													<li>Help and documentation</li>
+												</ul>
+											</td>
+										</tr>
+									</table>
+								</section>
+							</div>
+							<!-- t & c -->
+							<div class="section-row">
+								<section class="content">
+									<a class="image" href="images/t&c.png" data-lightbox="heuristic" data-title="Terms & Conditions Page"><img class="main" src="images/t&c.png" alt="Terms & Conditions Page" /></a>
+									Terms & Conditions Page
+								</section>
+								<section class="content border-left">
+									<a class="image" href="images/revamp_t&c.png" data-lightbox="heuristic" data-title="Terms & Conditions Page (Revamp)"><img class="main" src="images/revamp_t&c.png" alt="Terms & Conditions Page (Revamp)" /></a>
+									Terms & Conditions Page (Revamp)
+								</section>
+								<section class="content border-left">
+									<table class="comparison">
+										<tr>
+											<th>Current Libra</th>
+											<th>Revamp</th>
+										</tr>
+										<tr>
+											<td>After successful login, user will be brought to this page, have to click on "I agree" to proceed on to next step</td>
+											<td>Appears as an optional item below login fields</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="list-title">Heuristic violated: </div>
+												<ul>
+													<li>Aesthetics and minimalist design</li>
+													<li>Flexibility and efficiency of use</li>
+												</ul>
+											</td>
+											<td>
+												<div class="list-title">Heuristic applied: </div>
+												<ul>
+													<li>Aesthetics and minimalist design</li>
+													<li>Flexibility and efficiency of use</li>
+												</ul>
+											</td>
+										</tr>
+									</table>
+								</section>
+							</div>
+						</div>
+						<br />
+						<h2>2. Member Creation Flow</h2>
+						<div class="features form-labels">
+							<div class="section-row">
+								<section class="content section-title">Current Libra</section>
+								<section class="content section-title border-left">Revamp</section>
+								<section class="content section-title border-left">Heuristic Evalation</section>
+							</div>
+							<!-- landing page -->
+							<div class="section-row">
+								<section class="content">
+									<a class="image" href="images/landing.png" data-lightbox="heuristic" data-title="Dashboard"><img class="main" src="images/landing.png" alt="Dashboard" /></a>
+									Dashboard
+								</section>
+								<section class="content border-left">
+									<a class="image" href="images/revamp_dashboard.png" data-lightbox="heuristic" data-title="Dashboard (Revamp)"><img class="main" src="images/revamp_dashboard.png" alt="Dashboard (Revamp)" /></a>
+									Dashboard (Revamp)
+								</section>
+								<section class="content border-left">
+									<table class="comparison">
+										<tr>
+											<th>Current Libra</th>
+											<th>Revamp</th>
+										</tr>
+										<tr>
+											<td>Need to look out for where to navigate to go to create an account</td>
+											<td>Provides quick action which can be customized later on once user gets more familiarized with the site</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="list-title">Heuristic violated: </div>
+												<ul>
+													<li>Flexibility and efficiency of use</li>
+													<li>Recognition rather than recall</li>
+												</ul>
+											</td>
+											<td>
+												<div class="list-title">Heuristic applied: </div>
+												<ul>
+													<li>Flexibility and efficiency of use</li>
+													<li>Recognition rather than recall</li>
+												</ul>
+											</td>
+										</tr>
+									</table>
+								</section>
+							</div>
+							<!-- create member page -->
+							<div class="section-row">
+								<section class="content">
+									<a class="image" href="images/create_member.png" data-lightbox="heuristic" data-title="Create Member Page"><img class="main" src="images/create_member.png" alt="Create Member Page" /></a>
+									Create Member Page
+								</section>
+								<section class="content border-left">
+									<a class="image" href="images/revamp_create1.png" data-lightbox="heuristic" data-title="Create Member Page (Revamp)"><img class="main" src="images/revamp_create1.png" alt="Create Member Page (Revamp)" /></a>
+									<p>1) Create Member Page (Revamp)</p>
+									<a class="image" href="images/revamp_create2.png" data-lightbox="heuristic" data-title="Create Member Page (Revamp) - Profile / Product settings"><img class="main" src="images/revamp_create2.png" alt="Create Member Page (Revamp) - Profile / Product settings" /></a>
+									<p>2) Create Member Page (Revamp) - Profile / Product settings</p>
+									<a class="image" href="images/revamp_create3.png" data-lightbox="heuristic" data-title="Create Member Page (Revamp) - Share settings"><img class="main" src="images/revamp_create3.png" alt="Create Member Page (Revamp) - Share settings" /></a>
+									<p>3) Create Member Page (Revamp) - Share settings</p>
+								</section>
+								<section class="content border-left">
+									<table class="comparison">
+										<tr>
+											<th>Current Libra</th>
+											<th>Revamp</th>
+										</tr>
+										<tr>
+											<td>A. Need prior knowledge of which account to copy settings from</td>
+											<td>1) Same, but proposed account profile, so user would be able to create a setting and saved as a new profile, for future account creation</td>
+										</tr>
+										<tr>
+											<td>B. Have to try multiple times for a unique ID that has not been used</td>
+											<td>1) Show all possible combinations only</td>
+										</tr>
+										<tr>
+											<td>C. Have to scroll to bottom to check password requirements, unable to show what has been typed</td>
+											<td>1) Password requirements is directly below passwords field to show requirements, eye icon to show what has been entered</td>
+										</tr>
+										<tr>
+											<td>D. Optional but not stated</td>
+											<td>2) Optional label in accordion title</td>
+										</tr>
+										<tr>
+											<td>E. Outdated recaptcha, hard to read</td>
+											<td>1) Removed</td>
+										</tr>
+										<tr>
+											<td>F. Unorthodox requirement of password not allowed to contain first / last name and username</td>
+											<td>1) Already moved to below passwords field; a "Generate password" to help quicker generate random password that fulfills the requirements</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="list-title">Heuristic violated: </div>
+												<ul>
+													<li>Recognition or recall</li>
+													<li>Aesthetics and minimalist design</li>
+													<li>Match between the website and the real world</li>
+													<li>Help users recognize, diagnose and recover from errors</ll>
+												</ul>
+											</td>
+											<td>
+												<div class="list-title">Heuristic applied: </div>
+												<ul>
+													<li>Flexibility and efficiency of use</li>
+													<li>Recognition or recall</li>
+													<li>Aesthetics and minimalist design</li>
+													<li>Match between the website and the real world</li>
+													<li>Help users recognize, diagnose and recover from errors</ll>
+												</ul>
+											</td>
+										</tr>
+									</table>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- clicks tracking -->
+					<section id="clicks-tracking" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h1>Clicks / User Actions Tracking</h1>
+							<h2>Current Libra</h2>
+							<p>Note: number listed is the number of clicks applied by user.</p>
+							<div class="features">
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/click_login.png" data-lightbox="clicks" data-title="Login Page"><img class="main" src="images/click_login.png" alt="Login Page" /></a>
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/click_tnc.png" data-lightbox="clicks" data-title="T&C Page"><img class="main" src="images/click_tnc.png" alt="T&C Page" /></a>
+									</section>
+									<section class="content border-left">
+										1. Click on Login Name field -> enter login Name <br />
+										2. Click on Password field -> enter password <br />
+										(Additional 2 clicks might occur for changing of language) <br />
+										3. Click on Sign in button <br />
+										4. Click to agree to T&C <br />
+										(Or click to disagree and start from login page again)
+									</section>
+								</div>
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/click_dashboard.png" data-lightbox="clicks" data-title="Dashboard Page"><img class="main" src="images/click_dashboard.png" alt="Dashboard Page" /></a>
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/click_securitycode.png" data-lightbox="clicks" data-title="Security Code Page"><img class="main" src="images/click_securitycode.png" alt="Security Code Page" /></a>
+									</section>
+									<section class="content border-left">
+										5. Click on Member Mgmt to show sub menu items <br />
+										6. Click on New Member to go to create member page <br />
+										7. Click on 1<sup>st</sup> Digit field, after filling in, focus will automatically go to the subsequent field <br />
+										8. Click on Submit button
+									</section>
+								</div>
+							</div>
+							<h3>Quick Creation w/o Copy Settings</h3>
+							<div class="features">
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/click_createmember.png" data-lightbox="clicks" data-title="Create Member Page"><img class="main" src="images/click_createmember.png" alt="Create Member Page" /></a>
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/click_success.png" data-lightbox="clicks" data-title="Member Created Dialog"><img class="main" src="images/click_success.png" alt="Member Created Dialog" /></a>
+									</section>
+									<section class="content border-left">
+										9: Click on 1<sup>st</sup> field to show other options <br />
+										10: Click on options shown from 9 <br />
+										11&12: Same as 9&10 <br />
+										13&14: Same as 9&10 <br />
+										15: Click on password field -> enter password <br />
+										(password might not pass, scroll down to check password policy) <br />
+										16: Click on validation field -> enter validation code <br />
+										(old style validation might not be clear for certain images) <br />
+										17: Click on Create button
+										18: Click on OK button to acknowledge successful account creation
+									</section>
+								</div>
+								<div class="section-row">
+									<section class="content"></section>
+									<section class="content"></section>
+									<section class="content align-right">
+										Total number of clicks incl. starting from login: <b>17</b> <br />
+										Number of clicks for quick creation w/o copy settings: <b>9</b>
+									</section>
+								</div>
+							</div>
+							<h3>Quick Creation with Copy Settings</h3>
+							<div class="features">
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/click_copysettings.png" data-lightbox="clicks" data-title="Create Member (Show Copy Settings)"><img class="main" src="images/click_copysettings.png" alt="Create Member (Show Copy Settings)" /></a>
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/click_copysettings2.png" data-lightbox="clicks" data-title="Create Member Page (With Copy Settings)"><img class="main" src="images/click_copysettings2.png" alt="Create Member Page (With Copy Settings)" /></a>
+									</section>
+									<section class="content border-left">
+										9: Click on account ID field to show options <br />
+										10: Click on 1 of the options to copy settings from <br />
+										11: Click on copy settings button to confirm action<br />
+										12: Click on 1<sup>st</sup> field to show other options <br />
+										13: Click on options shown from 12 <br />
+										14&15: Same as 12&13 <br />
+										16&17: Same as 12&13 <br />
+										18: Click on password field -> enter password <br />
+										19: Click on validation field -> enter validation <br />
+									</section>
+								</div>
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/click_copysettings_success.png" data-lightbox="clicks" data-title="Member Created Dialog"><img class="main" src="images/click_copysettings_success.png" alt="Member Created Dialog" /></a>
+									</section>
+									<section class="content border-left"></section>
+									<section class="content border-left">
+										20: Click on OK button to acknowledge successful account creation
+									</section>
+								</div>
+								<div class="section-row">
+									<section class="content"></section>
+									<section class="content"></section>
+									<section class="content align-right">
+										Total number of clicks incl. starting from login: <b>20</b> <br />
+										Number of clicks just for quick creation with copy settings: <b>12</b>
+									</section>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="wrapper style4 fade-up">
+						<div class="inner">
+							<h1>Clicks / User Actions Tracking Cont.</h1>
+							<h2>Libra Revamp</h2>
+							<p>Note: number listed is the number of clicks applied by user.</p>
+							<div class="features">
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/click2_login.png" data-lightbox="clicks" data-title="Login Page"><img class="main" src="images/click2_login.png" alt="Login Page" /></a>
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/click2_dashboard.png" data-lightbox="clicks" data-title="Dashboard"><img class="main" src="images/click2_dashboard.png" alt="Dashboard" /></a>
+									</section>
+									<section class="content border-left">
+										1. Click on Login Name field -> enter login Name <br />
+										2. Click on Password field -> enter password <br />
+										(Additional 2 clicks might occur for changing of language) <br />
+										3. Click on Sign in button <br />
+										(Additional click for if users want to check out the T&C page) <br />
+										4. Click on quick action's Create Member to go directly to create member page <br />
+										Optional 4, 5: A longer route to go to Create Member page from menu bar
+									</section>
+								</div>
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/click2_securitycode.png" data-lightbox="clicks" data-title="Security Code Page"><img class="main" src="images/click2_securitycode.png" alt="Security Code Page" /></a>
+									</section>
+									<section class="content border-left"></section>
+									<section class="content border-left">
+										5. 1<sup>st</sup> digit field us already on focus on load, after filling in, focus will automatically go to the subsequent field, so just fill in and click on submit <br />
+									</section>
+								</div>
+							</div>
+							<h3>Quick Creation w/o Copy Settings</h3>
+							<div class="features">
+								<div class="section-row">
+									<section class="content border-left">
+										<a class="image" href="images/click2_createmember.png" data-lightbox="clicks" data-title="Create Member Page"><img class="main" src="images/click2_createmember.png" alt="Create Member Page" /></a>
+									</section>
+									<section class="content">
+										<a class="image" href="images/click2_createconfirm.png" data-lightbox="clicks" data-title="Create Confirmation Dialog"><img class="main" src="images/click2_createconfirm.png" alt="Create Confirmation Dialog" /></a>
+									</section>								<section class="content border-left">
+										6, 7. Click on Account ID field to show options for available account ID and click on 1 of the options<br />
+										8. Click on button to generate password <br /> 
+										9. Click on Quick Create Account<br />
+										10. Click on OK button<br />
+									</section>
+								</div>
+								<div class="section-row">
+									<section class="content"></section>
+									<section class="content"></section>
+									<section class="content align-right">
+										Total number of clicks incl. starting from login: <b>10</b> <br />
+										Number of clicks just for quick creation w/o copy settings: <b>5</b>
+									</section>
+								</div>
+							</div>
+							<h3>Quick Creation with Copy Settings</h3>
+							<div class="features">
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/click2_createmembercopy.png" data-lightbox="clicks" data-title="Create Member Page (Copy Settings)"><img class="main" src="images/click2_createmembercopy.png" alt="Create Member Page (Copy Settings)" /></a>
+									</section>
+									<section class="content">
+										<a class="image" href="images/click2_createconfirmcopy.png" data-lightbox="clicks" data-title="Member Created Dialog"><img class="main" src="images/click2_createconfirmcopy.png" alt="Member Created Dialog" /></a>
+									</section>
+									<section class="content border-left">
+										6. Click on Copy Settings to show Copy Settings option <br />
+										7, 8. Click on copy settings field to show account list options and choose 1 of the options
+										9, 10. Click on Account ID field to show options for available account ID and click on 1 of the options<br />
+										11. Click on button to generate password <br /> 
+										12. Click on Quick Create Account <br />
+										13. Click on OK button
+									</section>
+								</div>
+								<div class="section-row">
+									<section class="content"></section>
+									<section class="content"></section>
+									<section class="content align-right">
+										Total number of clicks incl. starting from login: <b>13</b> <br />
+										Number of clicks just for quick creation w/o copy settings: <b>8</b>
+									</section>
+								</div>
+							</div>
+							<h3>Comparison Chart for Create Member Page only</h3>
+							<div class="features">
+								<div class="section-row">
+									<section class="content"></section>
+									<section class="content border-left align-center">
+										Current Libra
+									</section>
+									<section class="content border-left align-center">
+										Libra Revamp
+									</section>
+								</div>
+								<div class="section-row">
+									<section class="content align-center">
+										Without Copy Settings
+									</section>
+									<section class="content border-left align-center">
+										9
+									</section>
+									<section class="content border-left align-center">
+										<b>5</b>
+									</section>
+								</div>
+								<div class="section-row">
+									<section class="content align-center">
+										With Copy Settings
+									</section>
+									<section class="content border-left align-center">
+										12
+									</section>
+									<section class="content border-left align-center">
+										<b>8</b>
 									</section>
 								</div>
 							</div>
