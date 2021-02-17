@@ -4097,6 +4097,9 @@ table.comparison ul {
 	margin-top: 10px;
 	margin-bottom: 15px;
 }
+table.comparison .align-center img {
+	margin: 0 auto;
+}
 img.tick, img.cross {
 	width: 40px;
 	margin-top: 5px;
