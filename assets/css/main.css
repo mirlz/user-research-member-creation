@@ -387,6 +387,7 @@ input, select, textarea {
 
 	.align-center {
 		text-align: center;
+		vertical-align: middle;
 	}
 
 	.align-right {
@@ -4081,8 +4082,15 @@ table.comparison th, table.comparison td {
 	padding: 0.5em;
 	width: 50%;
 }
+table.comparison6 th, table.comparison6 td {
+	padding: 1em;
+	width: calc(100% / 6);
+}
+table.comparison6 tr th:first-child, table.comparison6 tr td:first-child {
+	width: 60px;
+}
 table.comparison.three-col th, table.comparison.three-col td {
-	width: 33.33%;
+	width: calc(100% / 3);
 }
 table.comparison th, td {
 	border: solid 1px rgba(255, 255, 255, 0.15);
@@ -4099,6 +4107,9 @@ table.comparison ul {
 }
 table.comparison .align-center img {
 	margin: 0 auto;
+}
+table.comparison img.mobile {
+	max-height: 355px;
 }
 img.tick, img.cross {
 	width: 40px;
