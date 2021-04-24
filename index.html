@@ -6,13 +6,16 @@
 -->
 <html>
 	<head>
-		<title>User Research - Member Creation</title>
+		<title>User Research - Libra Revamp</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/lightbox.min.css"> 
+		<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css"> 
 		<link rel="stylesheet" href="assets/css/default-skin/default-skin.css"> 
 		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -22,14 +25,24 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Introduction</a></li>
-							<li><a href="#project-goals">Project Goals</a></li>
-							<li><a href="#currentflow">Current User Flow</a></li>
-							<li><a href="#statistics">Users Behaviour Statistics</a></li>
+							<li><a href="#title">Title</a></li>
+							<li><a href="#business-goals">Business Goals</a></li>
+							<!-- <li><a href="#statistics">Users Behaviour Statistics</a></li> -->
 							<li><a href="#color-scheming">Color Scheming</a></li>
 							<li><a href="#form-elements">Form Elements Research</a></li>
-							<li><a href="#heuristic">Heuristic Evaluation</a></li>
-							<li><a href="#clicks-tracking">Clicks Tracking</a></li>
+							<li><a href="#features-flow">Features' Flow</a></li>
+							<li><a href="#loginflow">FF - Login</a></li>
+							<li><a href="#dashboardflow">FF - Dashboard</a></li>
+							<li><a href="#notifflow">FF - Notifications | Risky Account</a></li>
+							<li><a href="#sidebarflow">FF - Menu</a></li>
+							<li><a href="#accountsettingsflow">FF - Side Menu | Account Settings</a></li>
+							<li><a href="#securityflow">FF - Security</a></li>
+							<li><a href="#creatememberflow">FF - Create Member</a></li>
+							<li><a href="#accountlistflow">FF - Account List</a></li>
+							<li><a href="#winlossflow">FF - Win Lose</a></li>
+							<li><a href="#transferflow">FF - Transfer YTD</a></li>
+							<li><a href="#fulltransferflow">FF - Full Transfer</a></li>
+							<li><a href="#creditflow">FF - Credit</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -39,115 +52,48 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
+					<section id="title" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Improving player creation user flow process</h1>
-							<p>
-								<b>Brief: </b>To design a better system or workflow where users can: 
-								<ul>
-									<li>Login quicker</li>
-									<li>Browse / navigate easier regardless of type of devices used</li>
-									<li>Create player account(s) quicker</li>
-									<li>Allow for easier passing of player account(s) details to players</li>
-								</ul>
-							</p>
-							<h2>Who are our users?</h2>
-							<p>
-								<b>Brief: </b>Our users are the agents, including MA, SMA, or VVIPs possibly who uses our agent site for:-
-								<ul>
-									<li>Manage downline (members / players) accounts' credit / balance / commission</li>
-									<li>Transfer downline balance</li>
-									<li>Checking reports (winloss / statement etc)</li>
-									<li><b>Member account(s) creation</b></li>
-								</ul>
-							</p>
-
+							<h1>Libra Revamp</h1>
 							<ul class="actions">
-								<li><a href="#statistics" class="button scrolly">GA Statistics</a></li>
+								<li><a href="#business-goals" class="button scrolly">Business Goals</a></li>
 							</ul>
 						</div>
 					</section>
 
 				<!-- Project goals -->
-					<section id="project-goals" class="wrapper style2 fade-up">
+					<section id="business-goals" class="wrapper fullscreen style2 fade-up">
 						<div class="inner">
-							<main>
-								<article class="Venn2">
-									<div class="circle one">
-										<span></span>
-										<span></span>
-										<h3>BUSINESS GOALS</h3>
-										<p>- Increase member creations by 30%</p>
-										<p>- Retain / attract agents</p>
-										<p>- Reduce help from customer service, and promote individuals' use of agent system</p>
-										<p>- To provide ease of use of agent site to agents regardless of type of platform / devices used</p>
-										<p>- Provide a easier to use system so users can be happy using them</p>
-										<p>- Be able to push out features faster in development process</p>
-										<h3>PAINS</h3>
-										<p>- Not enough resources</p>
-										<p>- High development costs</p>
-										<p>- Users are not that tech-savvy</p>
-										<p>- Competitors in the market</p>
-									</div>
-									<div class="circle two">
-										<span></span>
-										<span></span>
-										<h3>USER GOALS</h3>
-										<p>- Able to create members quick, without caring too much on what details are being input</p>
-										<p>- Easy to create members on the go</p>
-										<p>- Wants to be able to share member creation details easily</p>
-										<p>- Easy to use system</p>
-										<h3>PAINS</h3>
-										<p>- Hard to use the system on smaller screens like on mobile</p>
-										<p>- Difficult to understand how to use the system</p>
-										<p>- Too many fields to enter for creating member</p>
-									</div>
-									<div class="shape onetwo">
-										<span></span>
-										<span></span>
-										<P><div class="fas fa-cat"></div></P>
-										<p>- Keep the system simple, reduce complexity</p>
-										<p>- Responsive web design that caters for mobile / tablet / desktop</p>
-										<p>- Should allow for a flow where users are able to do what they want without having to input / know too much, providing flexibility of use</p>
-										<p>- A frontend/backend architecture where it's easier for developers to make changes on the frontend side without having backend changing too much/often to support frontend changes</p>
-									</div>
-								</article>
-							</main>
-						</div>
-					</section>
-
-				<!-- current user flow -->
-					<section id="currentflow" class="wrapper style3 fullscreen fade-up">
-						<div class="inner">
-							<h1>End-to-end User Flow for Member Creation</h1>
-							<h2>Login Flow</h2>
-							<a class="image" href="images/login_flow.png" data-lightbox="userflow" data-title="Login User Flowchart"><img class="main" src="images/login_flow.png" alt="Login User Flowchart" /></a>
-							<br />
-							<h4>Things to note for user flow:</h4>
+							<h1>Business Goals</h1>
 							<ul>
-								<li>Where do user go if they forget their username / password?</li>
-								<li>Security OTP / code will prompt if user last login IP and current login IP is different</li>
-								<li>If security OTP / code wasn't prompted at first after login, going pages under Member Mgmt, Transfer, Account, Security will prompt for it</li>
+								<li>Cater the new libra site to adopt <b>cloud based solution</b> in the future</li>
+								<li><b>Reduce loading time</b> for reports, remove <b>request rate limitations</b></li>
+								<li>Currently winloss report takes 13.9s highest, 7.2s average , target to reduce to <b>3s</b> highest</li>
+								<li>Full transfer page takes 16.3s highest, 2s average, target to reduce to <b>3s</b> highest</li>
+								<li>To improve agent efficiency, the agents are able use member mgmt <b>API services</b> to create members, view reports, do transfer, adjust credits</li>
+								<li>To <b>reduce dependencies from b2c requests</b>, separate b2b2c both frontend and backend from b2b</li>
+								<li>To <b>reduce reliance on TS support</b>, we will be able to release our backend services without their help.</li>
+								<li>To cater for <b>ease of development and maintenance</b>, we will consolidate 3 agent sites into 1.
+								</li>
 							</ul>
-
-							<h2>Member Creation Flow</h2>
-							<a class="image" href="images/member_creation_flow.png" data-lightbox="userflow" data-title="Member Creation Flowchart"><img class="main" src="images/member_creation_flow.png" alt="Member Creation Flowchart" /></a>
-
+							<ul class="actions">
+								<li><a href="#color-scheming" class="button scrolly">Color Scheming</a></li>
+							</ul>
 						</div>
 					</section>
 
 				<!-- statistics -->
-					<section id="statistics" class="wrapper style4 fade-up">
+					<!-- <section id="statistics" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h1>User Statistics from GA</h1>
 							<h3>Most Visited Pages</h3>
 							<div class="ga features">
 								<section>
-									<a class="image" href="images/most_visited_1.png" data-lightbox="statistics" data-title="Most Visited Pages (1 Sept - 31 Dec 2020) 1-10"><img class="main" src="images/most_visited_1.png" alt="Most Visited Pages (1 Sept - 31 Dec 2020)" /></a>
+									<a class="image" href="images/most_visited_1.png" data-fancybox="statistics" data-caption="Most Visited Pages (1 Sept - 31 Dec 2020) 1-10"><img class="main" src="images/most_visited_1.png" alt="Most Visited Pages (1 Sept - 31 Dec 2020)" /></a>
 									Most visited pages by users from 1 Sept - 31 Dec 2020 (1-10)
 								</section>
 								<section>
-									<a class="image" href="images/most_visited_2.png" data-lightbox="statistics" data-title="Most Visited Pages (1 Sept - 31 Dec 2020) 11-20"><img class="main" src="images/most_visited_2.png" alt="Most Visited Pages (1 Sept - 31 Dec 2020)" /></a>
+									<a class="image" href="images/most_visited_2.png" data-fancybox="statistics" data-caption="Most Visited Pages (1 Sept - 31 Dec 2020) 11-20"><img class="main" src="images/most_visited_2.png" alt="Most Visited Pages (1 Sept - 31 Dec 2020)" /></a>
 									Most visited pages by users from 1 Sept - 31 Dec 2020 (11-20)
 								</section>
 							</div>
@@ -155,50 +101,50 @@
 							<h3>Devices Used</h3>
 							<div class="ga features">
 								<section>
-									<a class="image" href="images/top_devices_overview.png" data-lightbox="statistics" data-title="Devices Used (1 Sept - 31 Dec 2020)"><img class="main" src="images/top_devices_overview.png" alt="Devices Used (1 Sept - 31 Dec 2020)" /></a>
+									<a class="image" href="images/top_devices_overview.png" data-fancybox="statistics" data-caption="Devices Used (1 Sept - 31 Dec 2020)"><img class="main" src="images/top_devices_overview.png" alt="Devices Used (1 Sept - 31 Dec 2020)" /></a>
 									Devices used by users (1 Sept - 31 Dec 2020)
 								</section>
 								<section>
-									<a class="image" href="images/devices_top_countries.png" data-lightbox="statistics" data-title="Top Devices Used By Countries (1 Sept - 31 Dec 2020)"><img class="main" src="images/devices_top_countries.png" alt="Top Devices Used By Countries (1 Sept - 31 Dec 2020)" /></a>
+									<a class="image" href="images/devices_top_countries.png" data-fancybox="statistics" data-caption="Top Devices Used By Countries (1 Sept - 31 Dec 2020)"><img class="main" src="images/devices_top_countries.png" alt="Top Devices Used By Countries (1 Sept - 31 Dec 2020)" /></a>
 									Top Devices used by countries (1 Sept - 31 Dec 2020)
 								</section>
 								<section>
-									<a class="image" href="images/devices_indo.png" data-lightbox="statistics" data-title="Devices Used By Indonesia (1 Sept - 31 Dec 2020)"><img class="main" src="images/devices_indo.png" alt="Devices Used By Indonesia (1 Sept - 31 Dec 2020)" /></a>
+									<a class="image" href="images/devices_indo.png" data-fancybox="statistics" data-caption="Devices Used By Indonesia (1 Sept - 31 Dec 2020)"><img class="main" src="images/devices_indo.png" alt="Devices Used By Indonesia (1 Sept - 31 Dec 2020)" /></a>
 									Devices used by Indonesia (1 Sept - 31 Dec 2020)
 								</section>
 								<section>
-									<a class="image" href="images/devices_thai.png" data-lightbox="statistics" data-title="Devices Used By Thailand (1 Sept - 31 Dec 2020)"><img class="main" src="images/devices_thai.png" alt="Devices Used By Thailand (1 Sept - 31 Dec 2020)" /></a>
+									<a class="image" href="images/devices_thai.png" data-fancybox="statistics" data-caption="Devices Used By Thailand (1 Sept - 31 Dec 2020)"><img class="main" src="images/devices_thai.png" alt="Devices Used By Thailand (1 Sept - 31 Dec 2020)" /></a>
 									Devices used by Thailand (1 Sept - 31 Dec 2020)
 								</section>
 								<section>
-									<a class="image" href="images/devices_viet.png" data-lightbox="statistics" data-title="Devices Used By Vietnam (1 Sept - 31 Dec 2020)"><img class="main" src="images/devices_viet.png" alt="Devices Used By Vietnam (1 Sept - 31 Dec 2020)" /></a>
+									<a class="image" href="images/devices_viet.png" data-fancybox="statistics" data-caption="Devices Used By Vietnam (1 Sept - 31 Dec 2020)"><img class="main" src="images/devices_viet.png" alt="Devices Used By Vietnam (1 Sept - 31 Dec 2020)" /></a>
 									Devices used by Vietnam (1 Sept - 31 Dec 2020)
 								</section>
 								<section></section>
 							</div>
 							<hr></hr>
 						</div>
-					</section>
+					</section> -->
 
 				<!-- Color scheming -->
-				<section id="color-scheming" class="wrapper style4 fade-up">
+				<section id="color-scheming" class="wrapper style3 fade-up">
 					<div class="inner">
 						<h1>Color Scheming</h1>
 						<div class="color features">
 							<section>
-								<a class="image" href="images/colorscheme1.png" data-lightbox="colorscheme" data-title="Typography"><img class="main" src="images/colorscheme1.png" alt="Typography" /></a>
+								<a class="image" href="images/colorscheme1.png" data-fancybox="colorscheme" data-caption="Typography"><img class="main" src="images/colorscheme1.png" alt="Typography" /></a>
 								Typography
 							</section>
 							<section class="border-left">
-								<a class="image" href="images/colorscheme4.png" data-lightbox="colorscheme" data-title="Primary Color"><img class="main" src="images/colorscheme4.png" alt="Primary Color" /></a>
+								<a class="image" href="images/colorscheme4.png" data-fancybox="colorscheme" data-caption="Primary Color"><img class="main" src="images/colorscheme4.png" alt="Primary Color" /></a>
 								Primary Color
 							</section>
 							<section class="border-top">
-								<a class="image" href="images/colorscheme2.png" data-lightbox="colorscheme" data-title="Color Scheming"><img class="main" src="images/colorscheme2.png" alt="Color Scheming" /></a>
+								<a class="image" href="images/colorscheme2.png" data-fancybox="colorscheme" data-caption="Color Scheming"><img class="main" src="images/colorscheme2.png" alt="Color Scheming" /></a>
 								Color Scheming
 							</section>
 							<section class="border-top">
-								<a class="image" href="images/colorscheme3.png" data-lightbox="colorscheme" data-title="Elements UI"><img class="main" src="images/colorscheme3.png" alt="Elements UI" /></a>
+								<a class="image" href="images/colorscheme3.png" data-fancybox="colorscheme" data-caption="Elements UI"><img class="main" src="images/colorscheme3.png" alt="Elements UI" /></a>
 								Elements UI
 							</section>
 						</div>
@@ -207,7 +153,7 @@
 				</section>
 
 				<!-- Form Elements Research-->
-					<section id="form-elements" class="wrapper style1 fade-up">
+					<section id="form-elements" class="wrapper style4 fade-up">
 						<div class="inner">
 							<h1>Form Elements Research</h1>
 							<div class="features form-labels">
@@ -216,12 +162,12 @@
 								</div>
 								<div class="section-row">
 									<section class="content">
-										<a class="image" href="images/form_label.png" data-lightbox="form-label" data-title="Static Label"><img class="main" src="images/form_label.png" alt="Static Label" /></a>
-										<a class="image" href="images/form_label1.png" data-lightbox="form-label" data-title="Static Label"><img class="main" src="images/form_label1.png" alt="Static Label" /></a>
+										<a class="image" href="images/form_label.png" data-fancybox="form-label" data-caption="Static Label"><img class="main" src="images/form_label.png" alt="Static Label" /></a>
+										<a class="image" href="images/form_label1.png" data-fancybox="form-label" data-caption="Static Label"><img class="main" src="images/form_label1.png" alt="Static Label" /></a>
 										1) Static label above input field
 									</section>
 									<section class="content border-left">
-										<a class="image" href="images/form_label2.png" data-lightbox="form-label" data-title="Floating Label"><img class="main" src="images/form_label2.png" alt="Floating Label" /></a>
+										<a class="image" href="images/form_label2.png" data-fancybox="form-label" data-caption="Floating Label"><img class="main" src="images/form_label2.png" alt="Floating Label" /></a>
 										2) Floating label
 									</section>
 									<section class="content border-left">
@@ -256,12 +202,12 @@
 								</div>
 								<div class="section-row">
 									<section class="content">
-										<a class="image" href="images/form_placeholder.png" data-lightbox="form-label" data-title="Static Text Above Field"><img class="main" src="images/form_placeholder.png" alt="Static Text Above Field" /></a>
+										<a class="image" href="images/form_placeholder.png" data-fancybox="form-label" data-caption="Static Text Above Field"><img class="main" src="images/form_placeholder.png" alt="Static Text Above Field" /></a>
 										1) Static helper text above / below input field
 									</section>
 									<section class="content border-left">
-										<a class="image" href="images/form_placeholder1.png" data-lightbox="form-label" data-title="Classic Placeholder in Field"><img class="main" src="images/form_placeholder1.png" alt="Classic Placeholder in Field" /></a>
-										<a class="image" href="images/form_placeholder2.png" data-lightbox="form-label" data-title="Placeholder as Helper Text"><img class="main" src="images/form_placeholder2.png" alt="Placeholder as Helper Text" /></a>
+										<a class="image" href="images/form_placeholder1.png" data-fancybox="form-label" data-caption="Classic Placeholder in Field"><img class="main" src="images/form_placeholder1.png" alt="Classic Placeholder in Field" /></a>
+										<a class="image" href="images/form_placeholder2.png" data-fancybox="form-label" data-caption="Placeholder as Helper Text"><img class="main" src="images/form_placeholder2.png" alt="Placeholder as Helper Text" /></a>
 										2) Classic placeholder in input field
 									</section>
 									<section class="content border-left">
@@ -301,13 +247,13 @@
 								</div>
 								<div class="section-row">
 									<section class="content">
-										<a class="image" href="images/form_number.png" data-lightbox="form-label" data-title="Tiny Spinner in Input"><img class="main" src="images/form_number.png" alt="Tiny Spinner in Input" /></a>
+										<a class="image" href="images/form_number.png" data-fancybox="form-label" data-caption="Tiny Spinner in Input"><img class="main" src="images/form_number.png" alt="Tiny Spinner in Input" /></a>
 										1) Tiny spinner in input
 									</section>
 									<section class="content border-left">
-										<a class="image" href="images/form_number1.png" data-lightbox="form-label" data-title="Number Widget"><img class="main" src="images/form_number1.png" alt="Number Widget" /></a>
+										<a class="image" href="images/form_number1.png" data-fancybox="form-label" data-caption="Number Widget"><img class="main" src="images/form_number1.png" alt="Number Widget" /></a>
 										2) Number widget
-										<a class="image" href="images/form_number2.png" data-lightbox="form-label" data-title="Range Slider"><img class="main" src="images/form_number2.png" alt="Range Slider" /></a>
+										<a class="image" href="images/form_number2.png" data-fancybox="form-label" data-caption="Range Slider"><img class="main" src="images/form_number2.png" alt="Range Slider" /></a>
 										3) Range Slider
 									</section>
 									<section class="content border-left">
@@ -352,11 +298,11 @@
 								</div>
 								<div class="section-row">
 									<section class="content">
-										<a class="image" href="images/form_select.png" data-lightbox="form-label" data-title="Classic Select Dropdown"><img class="main" src="images/form_select.png" alt="Classic Select Dropdown" /></a>
+										<a class="image" href="images/form_select.png" data-fancybox="form-label" data-caption="Classic Select Dropdown"><img class="main" src="images/form_select.png" alt="Classic Select Dropdown" /></a>
 										1) Classic select dropdown
 									</section>
 									<section class="content border-left">
-										<a class="image" href="images/form_select2.png" data-lightbox="form-label" data-title="Select Dropdown with Search"><img class="main" src="images/form_select2.png" alt="Select Dropdown with Search" /></a>
+										<a class="image" href="images/form_select2.png" data-fancybox="form-label" data-caption="Select Dropdown with Search"><img class="main" src="images/form_select2.png" alt="Select Dropdown with Search" /></a>
 										2) Select dropdown with search
 									</section>
 									<section class="content border-left">
@@ -388,458 +334,1417 @@
 					</section>
 
 				<!-- heuristic evaluation -->
-				<section id="heuristic" class="wrapper style2 fullscreen fade-up">
+				<section id="features-flow" class="wrapper style1 fullscreen fade-up">
 					<div class="inner">
-						<h1>Heuristic Evaluation</h1>
-						<h2>1. Login Flow</h2>
-						<div class="features form-labels">
-							<div class="section-row">
-								<section class="content section-title">Current Libra</section>
-								<section class="content section-title border-left">Revamp</section>
-								<section class="content section-title border-left">Heuristic Evalation</section>
-							</div>
-							<!-- login -->
-							<div class="section-row">
-								<section class="content">
-									<a class="image" href="images/login.png" data-lightbox="heuristic" data-title="Login Page"><img class="main" src="images/login.png" alt="Login Page" /></a>
-									Login Page
-								</section>
-								<section class="content border-left">
-									<a class="image" href="images/revamp_login.png" data-lightbox="heuristic" data-title="Login Page (Revamp)"><img class="main" src="images/revamp_login.png" alt="Login Page (Revamp)" /></a>
-									<a class="image" href="images/revamp_login2.png" data-lightbox="heuristic" data-title="Login Page (Revamp)"><img class="main" src="images/revamp_login2.png" alt="Login Page (Revamp)" /></a>
-									Login Page (Revamp)
-								</section>
-								<section class="content border-left">
-									<table class="comparison">
-										<tr>
-											<th>Current Libra</th>
-											<th>Revamp</th>
-										</tr>
-										<tr>
-											<td>No help for lost username / password</td>
-											<td>Provide help to retrieve lost username / password with contact us</td>
-										</tr>
-										<tr>
-											<td>Unable to see what has been entered in password field already</td>
-											<td>An eye icon to see what has already been entered in password field</td>
-										</tr>
-										<tr>
-											<td>NA</td>
-											<td>Option to save login so user will stay logged in for 7 days</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="list-title">Heuristic violated: </div>
-												<ul>
-													<li>Error prevention</li>
-													<li>Help users recognize, diagnose and recover from errors</li>
-													<li>Match between the website and the real world</li>
-												</ul>
-											</td>
-											<td>
-												<div class="list-title">Heuristic applied: </div>
-												<ul>
-													<li>Error prevention</li>
-													<li>Help users recognize, diagnose and recover from errors</li>
-													<li>Match between the website and the real world</li>
-													<li>Flexibility and efficiency of use</li>
-													<li>Help and documentation</li>
-												</ul>
-											</td>
-										</tr>
-									</table>
-								</section>
-							</div>
+						<h1>Features' Flow</h1>
+
+						<!-- login -->
+						<table id="loginflow" class="heuristic">
+							<tr class="title-row">
+								<td colspan="2"><b>Login Page</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/login.png" data-fancybox="login" data-caption="Login Page"><img class="main" src="images/login.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_login.png" data-fancybox="login" data-caption="Login Page "><img class="main half" src="images/revamp_login.png" /></a>
+									<a class="image" href="images/revamp_login2.png" data-fancybox="login" data-caption="Login Page "><img class="main half" src="images/revamp_login2.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Password field</p>
+									<ul>
+										<li>Unable to see what has been entered in password field</li>
+									</ul>
+									<p class="title">Form elements</p>
+									<ul>
+										<li>Smaller click space</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Password field</p>
+									<ul>
+										<li>An eye icon to show password</li>
+									</ul>
+									<p class="title">Form elements</p>
+									<ul>
+										<li>Bigger click space</li>
+									</ul>
+									<p class="title">Info icon</p>
+									<ul>
+										<li>Option to contact customer service for help / support</li>
+									</ul>
+									<p class="title">After multiple failed logins</p>
+									<ul>
+										<li>After 5 failed sign in attempts, info icon will expand</li>
+									</ul>
+								</td>
+							</tr>
 							<!-- t & c -->
-							<div class="section-row">
-								<section class="content">
-									<a class="image" href="images/t&c.png" data-lightbox="heuristic" data-title="Terms & Conditions Page"><img class="main" src="images/t&c.png" alt="Terms & Conditions Page" /></a>
-									Terms & Conditions Page
-								</section>
-								<section class="content border-left">
-									<a class="image" href="images/revamp_t&c.png" data-lightbox="heuristic" data-title="Terms & Conditions Page (Revamp)"><img class="main" src="images/revamp_t&c.png" alt="Terms & Conditions Page (Revamp)" /></a>
-									Terms & Conditions Page (Revamp)
-								</section>
-								<section class="content border-left">
-									<table class="comparison">
-										<tr>
-											<th>Current Libra</th>
-											<th>Revamp</th>
-										</tr>
-										<tr>
-											<td>After successful login, user will be brought to this page, have to click on "I agree" to proceed on to next step</td>
-											<td>Appears as an optional item below login fields</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="list-title">Heuristic violated: </div>
-												<ul>
-													<li>Aesthetics and minimalist design</li>
-													<li>Flexibility and efficiency of use</li>
-												</ul>
-											</td>
-											<td>
-												<div class="list-title">Heuristic applied: </div>
-												<ul>
-													<li>Aesthetics and minimalist design</li>
-													<li>Flexibility and efficiency of use</li>
-												</ul>
-											</td>
-										</tr>
-									</table>
-								</section>
-							</div>
-						</div>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Terms & Conditions Page</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/t&c.png" data-fancybox="login" data-caption="Terms & Conditions Page"><img class="main" src="images/t&c.png"/></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_tncline.png" data-fancybox="login" data-caption="Login Page - T&C"><img class="main half" src="images/revamp_tncline.png"/></a>
+									<hr>
+									<a class="image" href="images/revamp_t&c.png" data-fancybox="login" data-caption="Terms & Conditions Page"><img class="main half" src="images/revamp_t&c.png"/></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Compulsory agreement</p>
+									<ul>
+										<li>Have to click on Agree to proceed</li>
+										<li>Page will appear on login success</li>
+									</ul>
+									<p class="title">Form elements</p>
+									<ul>
+										<li>Smaller click space</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Default agreement</p>
+									<ul>
+										<li>By signing in, consent is given</li>
+										<li>Appears as an option, user can click to read</li>
+										<li>Less disruptive, doesn't appear as a compulsory step</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
 						<br />
-						<h2>2. Member Creation Flow</h2>
-						<div class="features form-labels">
-							<div class="section-row">
-								<section class="content section-title">Current Libra</section>
-								<section class="content section-title border-left">Revamp</section>
-								<section class="content section-title border-left">Heuristic Evalation</section>
-							</div>
-							<!-- landing page -->
-							<div class="section-row">
-								<section class="content">
-									<a class="image" href="images/landing.png" data-lightbox="heuristic" data-title="Dashboard"><img class="main" src="images/landing.png" alt="Dashboard" /></a>
-									Dashboard
-								</section>
-								<section class="content border-left">
-									<a class="image" href="images/revamp_dashboard.png" data-lightbox="heuristic" data-title="Dashboard (Revamp)"><img class="main" src="images/revamp_dashboard.png" alt="Dashboard (Revamp)" /></a>
-									Dashboard (Revamp)
-								</section>
-								<section class="content border-left">
-									<table class="comparison">
-										<tr>
-											<th>Current Libra</th>
-											<th>Revamp</th>
-										</tr>
-										<tr>
-											<td>Need to look out for where to navigate to go to create an account</td>
-											<td>Provides quick action which can be customized later on once user gets more familiarized with the site</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="list-title">Heuristic violated: </div>
-												<ul>
-													<li>Flexibility and efficiency of use</li>
-													<li>Recognition rather than recall</li>
-												</ul>
-											</td>
-											<td>
-												<div class="list-title">Heuristic applied: </div>
-												<ul>
-													<li>Flexibility and efficiency of use</li>
-													<li>Recognition rather than recall</li>
-												</ul>
-											</td>
-										</tr>
-									</table>
-								</section>
-							</div>
-							<!-- create member page -->
-							<div class="section-row">
-								<section class="content">
-									<a class="image" href="images/create_member.png" data-lightbox="heuristic" data-title="Create Member Page"><img class="main" src="images/create_member.png" alt="Create Member Page" /></a>
-									Create Member Page
-								</section>
-								<section class="content border-left">
-									<a class="image" href="images/revamp_create1.png" data-lightbox="heuristic" data-title="Create Member Page (Revamp)"><img class="main" src="images/revamp_create1.png" alt="Create Member Page (Revamp)" /></a>
-									<p>1) Create Member Page (Revamp)</p>
-									<a class="image" href="images/revamp_create2.png" data-lightbox="heuristic" data-title="Create Member Page (Revamp) - Profile / Product settings"><img class="main" src="images/revamp_create2.png" alt="Create Member Page (Revamp) - Profile / Product settings" /></a>
-									<p>2) Create Member Page (Revamp) - Profile / Product settings</p>
-									<a class="image" href="images/revamp_create3.png" data-lightbox="heuristic" data-title="Create Member Page (Revamp) - Share settings"><img class="main" src="images/revamp_create3.png" alt="Create Member Page (Revamp) - Share settings" /></a>
-									<p>3) Create Member Page (Revamp) - Share settings</p>
-								</section>
-								<section class="content border-left">
-									<table class="comparison">
-										<tr>
-											<th>Current Libra</th>
-											<th>Revamp</th>
-										</tr>
-										<tr>
-											<td>A. Need prior knowledge of which account to copy settings from</td>
-											<td>1) Same, but proposed account profile, so user would be able to create a setting and saved as a new profile, for future account creation</td>
-										</tr>
-										<tr>
-											<td>B. Have to try multiple times for a unique ID that has not been used</td>
-											<td>1) Show all possible combinations only</td>
-										</tr>
-										<tr>
-											<td>C. Have to scroll to bottom to check password requirements, unable to show what has been typed</td>
-											<td>1) Password requirements is directly below passwords field to show requirements, eye icon to show what has been entered</td>
-										</tr>
-										<tr>
-											<td>D. Optional but not stated</td>
-											<td>2) Optional label in accordion title</td>
-										</tr>
-										<tr>
-											<td>E. Outdated recaptcha, hard to read</td>
-											<td>1) Removed</td>
-										</tr>
-										<tr>
-											<td>F. Unorthodox requirement of password not allowed to contain first / last name and username</td>
-											<td>1) Already moved to below passwords field; a "Generate password" to help quicker generate random password that fulfills the requirements</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="list-title">Heuristic violated: </div>
-												<ul>
-													<li>Recognition or recall</li>
-													<li>Aesthetics and minimalist design</li>
-													<li>Match between the website and the real world</li>
-													<li>Help users recognize, diagnose and recover from errors</ll>
-												</ul>
-											</td>
-											<td>
-												<div class="list-title">Heuristic applied: </div>
-												<ul>
-													<li>Flexibility and efficiency of use</li>
-													<li>Recognition or recall</li>
-													<li>Aesthetics and minimalist design</li>
-													<li>Match between the website and the real world</li>
-													<li>Help users recognize, diagnose and recover from errors</ll>
-												</ul>
-											</td>
-										</tr>
-									</table>
-								</section>
-							</div>
-						</div>
+
+						<hr>
+
+						<!-- dashboard -->
+						<table id="dashboardflow" class="heuristic heuristic-half">
+							<tr class="title-row">
+								<td colspan="2"><b>Dashboard Page</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/landing.png" data-fancybox="dashboard" data-caption="Dashboard"><img class="main" src="images/landing.png" /></a>
+									<a class="image" href="images/landing_datefilter.png" data-fancybox="dashboard" data-caption="Dashboard (Date)"><img class="main" src="images/landing_datefilter.png" /></a>
+									<a class="image" href="images/landing_date.png" data-fancybox="dashboard" data-caption="Dashboard (Date)"><img class="main" src="images/landing_date.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_dashboard.png" data-fancybox="dashboard" data-caption="Dashboard"><img class="main" src="images/revamp_dashboard.png" /></a>
+									<a class="image" href="images/revamp_date.png" data-fancybox="dashboard" data-caption="Dashboard (Date)"><img class="main" src="images/revamp_date.png" /></a>
+								</td>
+							<tr>
+								<td>
+									<ul>
+										<li>Information not sectioned, draw focus away from the data</li>
+										<li>Limited information to communicate and provide to the user</li>
+									</ul>
+									<p class="title">Date filter</p>
+									<ul>
+										<li>2 individual FROM date and TO date field to fill</li>
+										<li>No validation for date range if TO date is > FROM date</li>
+										<li>Additional click to click on TO date after FROM date is selected</li>
+										<li>Small buttons to click for dates on calendar drop down</li>
+										<li>Separate predefined date range</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>Information sectioned into different components for better clarity</li>
+										<li>Included quick actions / backup site links for ease of access</li>
+										<li>Included balance info / bet counts for additional info</li>
+									</ul>
+									<p class="title">Date filter</p>
+									<ul>
+										<li>1 field for selecting date range</li>
+										<li>Validation for date range, unable to choose a bigger FROM date than TO date</li>
+										<li>Date range in date dropdown for better visalization, range will be selected</li>
+										<li>Bigger space to click for calendar drop down</li>
+										<li>Predefined date range for quick access and range highlight in same dropdown for better visualization</li>
+										<li><a href="http://www.daterangepicker.com/#config" target="_blank">Link: Date range picker</a>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Dashboard Page > Quick Actions</b></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<a class="image" href="images/dashboard_quickactions.png" data-fancybox="dashboard" data-caption="Dashboard - Quick Actions"><img class="triple main" src="images/dashboard_quickactions.png" /></a>
+									<a class="image" href="images/most_visited_1.png" data-fancybox="dashboard" data-caption="Most Visited (1 Sept 2020 - 31 Dec 2020)"><img class="triple main" src="images/most_visited_1.png" /></a>
+									<a class="image" href="images/most_visited_2.png" data-fancybox="dashboard" data-caption="Most Visited (1 Sept 2020 - 31 Dec 2020)"><img class="triple main" src="images/most_visited_2.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<p class="title">Customization</p>
+									<ul>
+										<li>Allow for user customization to choose top pages for quick navigation instead of remembering where is located under which menu item</li>
+										<li>Default is following what was collected from GA on most visited pages</li>
+										<li>Allows for user control freedom</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+
+						<hr>
+
+						<!-- notifications -->
+						<table id="notifflow" class="heuristic">
+							<tr class="title-row">
+								<td colspan="2"><b>Notifications</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/notif.png" data-fancybox="notifications" data-caption="Notifications"><img class="main" src="images/notif.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_notif.png" data-fancybox="notifications" data-caption="Notifications"><img class="main" src="images/revamp_notif.png" /></a>
+									<hr>
+									<a class="image" href="images/revamp_notif2.png" data-fancybox="notifications" data-caption="Notifications"><img class="main" src="images/revamp_notif2.png" /></a>
+									<a class="image" href="images/revamp_notif3.png" data-fancybox="notifications" data-caption="Notifications"><img class="main" src="images/revamp_notif3.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Uncategorized</p>
+									<ul>
+										<li>Unable to tell which is menu item / notification</li>
+										<li>Information too spread out, especially if all items have notifications</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Consolidation</p>
+									<ul>
+										<li>All notification types categorized under 1 notification bell</li>
+										<li>Location moved from menu side bar to a separate location for clarity / ease of access</li>
+									</ul>
+									<p class="title">Categories</p>
+									<ul>
+										<li>Notifications to still be categorized so it's easier to read</li>
+									</ul>
+									<p class="title">Mark all as read</p>
+									<ul>
+										<li>Allow quick action for user to clear notifications</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Notifications > Risky Account -> Add to monitor list</b></td>
+							</tr>
+							<tr>
+								<td style="width:50%">
+									<a class="image" href="images/risky_account.png" data-fancybox="notifications" data-caption="Risky Account"><img class="half main" src="images/risky_account.png" /></a>
+									<a class="image" href="images/risky_account_monitor.png" data-fancybox="notifications" data-caption="Risky Account - Add To Monitored List"><img class="half main" src="images/risky_account_monitor.png" /></a>
+								</td>
+								<td style="width:50%">
+									<a class="image" href="images/revamp_risky.png" data-fancybox="notifications" data-caption="Risky Account"><img class="triple main" src="images/revamp_risky.png" /></a>
+									<a class="image" href="images/revamp_risky2.png" data-fancybox="notifications" data-caption="Risky Account - Select"><img class="triple main" src="images/revamp_risky2.png" /></a>
+									<a class="image" href="images/revamp_risky_monitor.png" data-fancybox="notifications" data-caption="Risky Account - Added to Monitor List"><img class="triple main" src="images/revamp_risky_monitor.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Confirmation before adding</p>
+									<ul>
+										<li>Prompts dialog to confirm user's action</li>
+									</ul>
+									<p class="title">Static text for going to monitored account page</p>
+									<ul>
+										<li>Direct user to monitored account page from risky account</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Separation of reviewed / not reviewed accounts</p>
+									<ul>
+										<li>Remove highlighting of row to show "recently added" but instead allow for sorting</li>
+										<li>On review, the data will show up in "Reviewed" tab instead of in "Pending"</li>
+									</ul>
+									<p class="title">Checkbox</p>
+									<ul>
+										<li>Moved to first column</li>
+										<li>Checkbox for selection of entire row</li>
+										<li>Snackbar below to allow for user to choose between "Add to Monitor List" / "Suspend"</li>
+									</ul>
+									<p class="title">Added to monitored account message</p>
+									<ul>
+										<li>Message to user that accounts has been added to monitored accounts</li>
+										<li>Provides a link to direct user to "My Monitored Account" page in success message</li>
+										<li><a href="https://www.primefaces.org/primevue/showcase/#/message" target="_blank">Link: PrimeVue Message</a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Notifications > Risky Account -> Suspend</b></td>
+							</tr>
+							<tr>
+								<td style="width:50%">
+									<a class="image" href="images/risky_account.png" data-fancybox="notifications" data-caption="Risky Account"><img class="half main" src="images/risky_account.png" /></a>
+									<a class="image" href="images/riskyaccount_suspend.png" data-fancybox="notifications" data-caption="Risky Account - Suspend Confirmation"><img class="half main" src="images/riskyaccount_suspend.png" /></a>
+									<a class="image" href="images/risky_account_suspended.png" data-fancybox="notifications" data-caption="Risky Account - Suspended"><img class="half main" src="images/risky_account_suspended.png" /></a>
+								</td>
+								<td style="width:50%">
+									<a class="image" href="images/revamp_risky.png" data-fancybox="notifications" data-caption="Risky Account"><img class="triple main" src="images/revamp_risky.png" /></a>
+									<a class="image" href="images/revamp_risky2.png" data-fancybox="notifications" data-caption="Risky Account - Select"><img class="triple main" src="images/revamp_risky2.png" /></a>
+									<a class="image" href="images/revamp_risky_suspend.png" data-fancybox="notifications" data-caption="Risky Account - Suspend Confirmation"><img class="triple main" src="images/revamp_risky_suspend.png" /></a>
+									<a class="image" href="images/revamp_risky_suspended.png" data-fancybox="notifications" data-caption="Risky Account -Suspended"><img class="triple main" src="images/revamp_risky_suspended.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Confirmation before suspending</p>
+									<ul>
+										<li>Prompts dialog to confirm user's action</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Confirmation before suspending</p>
+									<ul>
+										<li>Prompts dialog to confirm user's action</li>
+									</ul>
+									<p class="title">Success toast</p>
+									<ul>
+										<li>Shows success toast that account has been suspended</li>
+										<li><a href="https://www.primefaces.org/primevue/showcase/#/toast" target="_blank">Link: PrimeVue Toast</a></li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+
+						<hr>
+
+						<!-- sidebar menu -->
+						<table id="sidebarflow" class="heuristic">
+							<tr class="title-row">
+								<td><b>Menu</b>
+								<td><b>Menu | Side menu</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/menu-1.png" data-fancybox="menu" data-caption="Menu"><img class="main" src="images/menu-1.png" /></a>
+									<a class="image" href="images/menu-2.png" data-fancybox="menu" data-caption="Menu-2"><img class="main" src="images/menu-2.png" /></a>
+									<hr>
+									<a class="image" href="images/header.png" data-fancybox="menu" data-caption="Header Menu"><img class="main" src="images/header.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_menu.png" data-fancybox="menu" data-caption="Menu"><img class="main" src="images/revamp_menu.png" /></a>
+									<a class="image" href="images/revamp_sidemenu.png" data-fancybox="menu" data-caption="Header Menu"><img class="main" src="images/revamp_sidemenu.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Main menu</p>
+									<ul>
+										<li>Menu too long</li>
+										<li>Mixture of both stand alone notifications and menu items</li>
+									</ul>
+									<p class="title">Header menu</p>
+									<ul>
+										<li>Overcrowded header bar</li>
+										<li>In-your-face logout button</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Main menu</p>
+									<ul>
+										<li>Shorter menu</li>
+										<li>Notifications / announcements / messages moved to header bar instead</li>
+										<li>Removed Security / Account from menu</li>
+										<li>New menu -> Account Settings</li>
+									</ul>
+									<p class="title">Header menu</p>
+									<ul>
+										<li>Additional settings that has less to do with site navigation to be placed here</li>
+										<li>A less straight-to-logout method for users, but we don't want to make it too hard for them to log out either</li>
+										<li><a style="text-decoration: underline" href="https://uxdesign.cc/cognitive-behaviour-how-ux-designers-make-use-of-it-in-design-b9490b974dc1" target="_blank">Read more</a></li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+
+						<hr>
+
+						<!-- account settings -->
+						<table id="accountsettingsflow" class="heuristic">
+							<tr class="subtitle-row">
+								<td><b>Account > Action Log | Help | Sign Out</b></td>
+								<td><b>Side Menu</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/action_log.png" data-fancybox="account-settings" data-caption="Action Log"><img class="main" src="images/action_log.png" /></a>
+									<a class="image" href="images/info_center.png" data-fancybox="account-settings" data-caption="Info Centre"><img class="main" src="images/info_center.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_sidemenu.png" data-fancybox="account-settings" data-caption="Side Menu"><img class="main" src="images/revamp_sidemenu.png" /></a>
+									<a class="image" href="images/fb_sidemenu.png" data-fancybox="account-settings" data-caption="FB Side Menu"><img class="main" src="images/fb_sidemenu.png" /></a>
+									<hr>
+									<a class="image" href="images/ga_actionlog.png" data-fancybox="account-settings" data-caption="Action Log Usage (1 Sept 2020 - 31 Dec 2020)"><img class="main" src="images/ga_actionlog.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Action Log</p>
+									<ul>
+										<li>To get all actions history commited by own account</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>All these pages are placed under side menu as it is something relative more important</li>
+										<li>Action log and My Monitored Accounts is more of something users use to keep track for themselves, placing it in a separate side menu grants them easier access</li>
+										<li>Info centre and contact us provides a more "help" basis, it's less website navigation and should be easy to access as well</li>
+									</ul>
+									<p class="title">Action Log</p>
+									<ul>
+										<li>Relatively important as agents use this to track actions done</li>
+										<li>Positioned in side menu for easier access</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="title-row">
+								<td><b>Account</b></td>
+								<td><b>Account Settings</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/account_menu.png" data-fancybox="account-settings" data-caption="Account Menu"><img class="main" src="images/account_menu.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_account.png" data-fancybox="account-settings" data-caption="Account Settings"><img class="main half" src="images/revamp_account.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ul>
+										<li>"Account" menu is something more important, rather than as a general website navigation</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Centralized location for account settings</p>
+									<ul>
+										<li>Balance | Password | Security Code | Associate Profile is consolidated into a single page as it's more to do with personal account settings</li>
+										<li>Congregated into 1 page and place on a more important position so it's easier for user to adjust user settings</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td><b>Account > Balance</b></td>
+								<td><b>Account Settings > Balance</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/balance.png" data-fancybox="account-settings" data-caption="Balance"><img class="main" src="images/balance.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_account.png" data-fancybox="account-settings" data-caption="Account Info"><img class="half main" src="images/revamp_account.png" /></a>
+									<a class="image" href="images/revamp_account_success.png" data-fancybox="heuristic" data-caption="Account Info (successfully updated)"><img class="half main" src="images/revamp_account_success.png" /></a>
+									<hr>
+									<a class="image" href="images/revamp_dashboard.png" data-fancybox="heuristic" data-caption="Dashboard"><img class="half main" src="images/revamp_dashboard.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ul>
+										<li>Relatively important information placed in a less straightforward location</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>Balance is placed in a location where user will see on login (dashboard)</li>
+										<li>Consolidated account information including passwords / balance in a separate account settings page</li>
+									</ul>
+									<p class="title">Successful toast</p>
+									<ul>
+										<li>On updating, successful message will appear in toast -> less disruptive but able to let user see that update is successful</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td><b>Account > Associate Profile</b></td>
+								<td><b>Account Settings >  Product</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/default_product.png" data-fancybox="account-settings" data-caption="Associate Profile"><img class="main" src="images/default_product.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_product.png" data-fancybox="account-settings" data-caption="Default Product"><img class="half main" src="images/revamp_product.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ul>
+										<li>Change own account's default product interface</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Centralized location for account settings</p>
+									<ul>
+										<li>More of a personal account settings, so is placed under account settings > product</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Change Language</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/change_language.png" data-fancybox="account-settings" data-caption="Change Language"><img class="main" src="images/change_language.png" /></a>
+									<a class="image" href="images/change_language2.png" data-fancybox="account-settings" data-caption="Change Language"><img class="main" src="images/change_language2.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_language.png" data-fancybox="account-settings" data-caption="Language Toolbar"><img class="main" src="images/revamp_language.png" /></a>
+									<a class="image" href="images/revamp_login.png" data-fancybox="account-settings" data-caption="Login"><img class="main half" src="images/revamp_login.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Unorthodox location</p>
+									<ul>
+										<li>A separate page for changing language</li>
+										<li>Not in a straight forward location after logging in</li>
+										<li>User need to know where to go to for changing language</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Consistent location</p>
+									<ul>
+										<li>Location is more prominent across website</li>
+										<li>Promoting consistency as it's in the same location from login</li>
+										<li>Ease of access</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Announcements</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/announcements.png" data-fancybox="account-settings" data-caption="Announcements"><img class="main" src="images/announcements.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_notif.png" data-fancybox="account-settings" data-caption="Notifications"><img class="main" src="images/revamp_notif.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ul>
+										<li>Putting announcements under "Account" is unusual</li>
+										<li>Not easily found</li>
+										<li>Not prominent enough</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>Moved to a more prominent location for ease of access</li>
+										<li>Stand alone item as it's more of a system notification and doesn't really go under general website navigation</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+
+						<hr>
+
+						<!-- security -->
+						<table id="securityflow" class="heuristic-half heuristic">
+							<tr class="title-row">
+								<td colspan="2"><b>Security > Password</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/password.png" data-fancybox="security" data-caption="Change Password"><img class="main half" src="images/password.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_password.png" data-fancybox="security" data-caption="Change Password"><img class="half main" src="images/revamp_password.png" /></a>
+									<a class="image" href="images/fb_password.png" data-fancybox="security" data-caption="Change Password - Facebook"><img class="half main" src="images/fb_password.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Unorthodox location</p>
+									<ul>
+										<li>A separate page for changing password</li>
+										<li>Not in a straight forward location</li>
+										<li>User need to know where to go to for changing password</li>
+									</ul>
+									<p class="title">Password field</p>
+									<ul>
+										<li>Unable to see what user has typed already into field</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Centralized location for account settings</p>
+									<ul>
+										<li>Ease of access</li>
+										<li>More common for changing password to be under a "account settings" location</li>
+									</ul>
+									<p class="title">Password field</p>
+									<ul>
+										<li>Eye icon to see what user has already typed in, allowing for room for correction</li>
+										<li>Removed additional step of input current password</li>
+									</ul>
+									<p class="title">Password policy</p>
+									<ul>
+										<li>Short length passwords are relatively easy to break, so the idea is to create lengthier ones for added security and to make them less predictable</li>
+										<li>A 2010 Georgia Tech Research Institute (GTRI) study told how a 12-character random password could satisfy a minimum length requirement to defeat code breaking and cracking software</li>
+										<li>Although 8-character passwords are insufficient without strong and complex combination. Alphanumerical characters, numbers and symbols will help to increase passwords strength, making it capable of resisting guessing and brute-force attacks</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="title-row">
+								<td colspan="2"><b>Security > Security Code | One Time Password</b></td>
+							</tr>
+							<tr>
+								<td>
+									<p><b>Security Code</b></p>
+									<a class="image" href="images/security_code.png" data-fancybox="security" data-caption="Change Security Code"><img class="half main" src="images/security_code.png" /></a>
+									<a class="image" href="images/enter_security_code.png" data-fancybox="security" data-caption="Security Code"><img class="half main" src="images/enter_security_code.png" /></a>
+									<hr>
+									<p><b>One Time Password</b></p>
+									<a class="image" href="images/change_otp.png" data-fancybox="security" data-caption="Change OTP (First Email)"><img class="half main" src="images/change_otp.png" /></a>
+									<a class="image" href="images/change_otp_sophos.png" data-fancybox="security" data-caption="Change OTP (Sophos)"><img class="half main" src="images/change_otp_sophos.png" /></a>
+									<a class="image" href="images/onetimepassword.png" data-fancybox="security" data-caption="One Time Password Prompt"><img class="half main" src="images/onetimepassword.png" /></a>
+									<a class="image" href="images/otp_email.png" data-fancybox="security" data-caption="One Time Password Email"><img class="half main" src="images/otp_email.png" /></a>
+								</td>
+								<td>
+									<p><b>Security Code</b></p>
+									<a class="image" href="images/revamp_securitycode.png" data-fancybox="security" data-caption="Change Security Code"><img class="half main" src="images/revamp_securitycode.png" /></a>
+									<a class="image" href="images/revamp_securitycodeprompt.png" data-fancybox="security" data-caption="Security Code Prompt"><img class="half main" src="images/revamp_securitycodeprompt.png" /></a>
+									<hr>
+									<p><b>One Time Password</b></p>
+									<a class="image" href="images/revamp_otp_email1.png" data-fancybox="security" data-caption="Change OTP (First Email)"><img class="triple main" src="images/revamp_otp_email1.png" /></a>
+									<a class="image" href="images/revamp_otp_email2.png" data-fancybox="security" data-caption="Change OTP (First Email) - Verification"><img class="triple main" src="images/revamp_otp_email2.png" /></a>
+									<a class="image" href="images/revamp_otp_sophos.png" data-fancybox="security" data-caption="Change OTP (Sophos)"><img class="triple main" src="images/revamp_otp_sophos.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Unorthodox location</p>
+									<ul>
+										<li>A separate page for changing security code</li>
+										<li>Not in a straight forward location</li>
+										<li>User need to know where to go to for changing security code</li>
+									</ul>
+									<p class="title">Ambiguity</p>
+									<ul>
+										<li>If email is chosen for OTP vertification, it takes precedence over security code</li>
+										<li>It's not clear that it's either security code / email vertification</li>
+									</ul>
+									<p class="title">Not broken down in steps - OTP email</p>
+									<ul>
+										<li>Steps to input email, verify email, and to resend OTP all in 1 page</li>
+									</ul>
+									<p class="title">Unnecessary additional recaptcha</p>
+									<ul>
+										<li>Breaks the flow by having user input recaptcha again before sending OTP to selected choice</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Centralized location for account settings</p>
+									<ul>
+										<li>Ease of access</li>
+										<li>More common for changing security code / OTP settings to be under a "account settings" location</li>
+									</ul>
+									<p class="title">Either security code OR one time password</p>
+									<ul>
+										<li>Combine of both features in 1 so user would know for security code verification, it's 1 of the 2 choices</li>
+										<li><a href="https://www.primefaces.org/primevue/showcase/#/tabview" target="_blank">Link: PrimeVue Tabview</a></li>
+									</ul>
+									<p class="title">Steps procedure for inputting email as OTP option</p>
+									<ul>
+										<li>User would be prompted on a step by step guide to input email first before verification</li>
+										<li>An additional step for system to resend OTP if user did not receive OTP after a minute has passed</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+
+						<hr>
+
+						<!-- create member -->
+						<table id="creatememberflow" class="heuristic">
+							<tr class="title-row">
+								<td><b>Create Member</b></td>
+								<td><b>Create Member - Single create -> Edit account settings</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/create_member.png" data-fancybox="create-member" data-caption="Create Member"><img class="main half" src="images/create_member.png" /></a>
+									<a class="image" href="images/create_member_success.png" data-fancybox="create-member" data-caption="Create Member - Success Dialog"><img class="main half" src="images/create_member_success.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_create1.png" data-fancybox="create-member" data-caption="Create Member"><img class="half main" src="images/revamp_create1.png" /></a>
+									<a class="image" href="images/revamp_accountsettings.png" data-fancybox="create-member" data-caption="Create Member - Account Settings"><img class="half main" src="images/revamp_accountsettings.png" /></a>
+									<a class="image" href="images/revamp_createprofile1.png" data-fancybox="create-member" data-caption="Create Member - Create Account Profile"><img class="half main" src="images/revamp_createprofile1.png" /></a>
+									<a class="image" href="images/revamp_create3.png" data-fancybox="create-member" data-caption="Create Member - Share Details"><img class="half main" src="images/revamp_create3.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 50%">
+									<p class="title">Copy settings</p>
+									<ul>
+										<li>Need prior knowledge of which account to copy settings from</li>
+									</ul>
+									<p class="title">Account ID</p>
+									<ul>
+										<li>Have to try multiple times for a unique ID that has not been used</li>
+									</ul>
+									<p class="title">Password</p>
+									<ul>
+										<li>Have to scroll to bottom to check password requirements, unable to show what has been typed</li>
+										<li>Unorthodox requirement of password not allowed to contain first / last name and username</li>
+										<li>Unable to see what has been typed in password field</li>
+									</ul>
+									<p class="title">Optional fields</p>
+									<ul>
+										<li>Optional text fields but not showed</li>
+										<li>E. Outdated recaptcha, hard to read</li>
+									</ul>
+									<p class="title">Captcha</p>
+									<ul>
+										<li>Outdated recaptcha, hard to read</li>
+									</ul>
+									<p class="title">Success dialog</p>
+									<ul>
+										<li>Dialog appear to show successful creation of account</li>
+									</ul>
+								</td>
+								<td style="width: 50%">
+									<p class="title">Account profiles - alternative to copy settings</p>
+									<ul>
+										<li>Preset settings that allow for user to choose from, and immediately can skip to creation bypassing product settings rate</li>
+										<li>Copy settings still enabled for backward compatibility, for users that are used to copy settings</li>
+									</ul>
+									<p class="title">Account ID</p>
+									<ul>
+										<li>Filter out available IDs only</li>
+									</ul>
+									<p class="title">Password</p>
+									<ul>
+										<li>Password policy written directly below text field for easier reference</li>
+										<li>Allow for random password generation so user don't need to waste time on coming up with a password that fits requirements</li>
+										<li>Eye icon for user to see what has been typed, room for error correction</li>
+									</ul>
+									<p class="title">Tooltip</p>
+									<ul>
+										<li>Additional tooltip icon to explain the new feature of account profile to users</li>
+									</ul>
+									<p class="title">Steps</p>
+									<ul>
+										<li>Steps above page to indicate user's progress</li>
+										<li>Allow for going back to previous page to edit details</li>
+									</ul>
+									<p class="title">Success message</p>
+									<ul>
+										<li>Message to indicate successful creation of account</li>
+										<li>Message to indicate account has been saved successfully for future account creation</li>
+										<li>QR code generation to allow easy sharing of account details to players</li>
+										<li>Copy to clipboard for copying of member account details for sharing</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Create Member - Edit account settings -> Account profiles</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/revamp_accountsettings.png" data-fancybox="create-member" data-caption="Create Member - Account Settings"><img class="triple main" src="images/revamp_accountsettings.png" /></a>
+									<a class="image" href="images/revamp_createprofile1.png" data-fancybox="create-member" data-caption="Create Member - Create Account Profile"><img class="triple main" src="images/revamp_createprofile1.png" /></a>
+									<a class="image" href="images/revamp_createprofile2.png" data-fancybox="create-member" data-caption="Create Member - Create Account Profile"><img class="triple main" src="images/revamp_createprofile2.png" /></a>
+									<a class="image" href="images/revamp_create3.png" data-fancybox="create-member" data-caption="Create Member - Share Details"><img class="triple main" src="images/revamp_create3.png" /></a>
+								</td>
+								<td>
+									<p class="title">Create new account profile</p>
+									<ul>
+										<li>On click of "Create" button, user has the option to save new profile or replace previously selected account profile</li>
+									</ul>
+									<p class="title">Success message</p>
+									<ul>
+										<li>Message to indicate account profile has been saved successfully for future account creation</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Create Member - Account profiles -> Max account profiles</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/revamp_replaceprofile1.png" data-fancybox="create-member" data-caption="Bulk Create Member - Max Account Profiles - Replace Existing"><img class="triple main" src="images/revamp_replaceprofile1.png" /></a>
+									<a class="image" href="images/revamp_replaceprofile2.png" data-fancybox="create-member" data-caption="Bulk Create Member - Max Account Profiles - Replace Existing"><img class="triple main" src="images/revamp_replaceprofile2.png" /></a>
+									<a class="image" href="images/revamp_create3_replace.png" data-fancybox="create-member" data-caption="Create Member - Share Details"><img class="triple main" src="images/revamp_create3_replace.png" /></a>
+								</td>
+								<td>
+									<p class="title">Max account profiles existed</p>
+									<ul>
+										<li>If max number of 8 account profiles already existed, the options will only allow for users to replace existing profiles</li>
+									</ul>
+									<p class="title">Success message</p>
+									<ul>
+										<li>Message to indicate account profile has been replaced successfully</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Create Member - Single create -> Quick create</b></td>
+							</tr>
+							<tr>
+								<td style="width: 50%">
+									<a class="image" href="images/revamp_create1.png" data-fancybox="create-member" data-caption="Create Member - Quick Create"><img class="triple main" src="images/revamp_create1.png" /></a>
+									<a class="image" href="images/revamp_create2.png" data-fancybox="create-member" data-caption="Create Member - Confirm Creation"><img class="triple main" src="images/revamp_create2.png" /></a>
+									<a class="image" href="images/revamp_create_copysettings2.png" data-fancybox="create-member" data-caption="Create Member - Share Details"><img class="triple main" src="images/revamp_create_copysettings2.png" /></a>
+								</td>
+								<td style="width: 50%">
+									<p class="title">Quick create button</p>
+									<ul>
+										<li>Allow user to bypass account settings and go straight into creating account with either account profile / copy settings option</li>
+									</ul>
+									<p class="title">Success toast</p>
+									<ul>
+										<li>Account profile has already been chosen, there was no change to account settings, so user will be brought to share details page with toast to indicate creation was successful</li>
+									</ul>
+								</td>
+							</tr>	
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Create Member - Single create -> Copy settings</b></td>
+							</tr>		
+							<tr>
+								<td style="width: 50%">
+									<a class="image" href="images/revamp_create_copysettings.png" data-fancybox="create-member" data-caption=" Create Member - Copy Settings"><img class="triple main" src="images/revamp_create_copysettings.png" /></a>
+									<a class="image" href="images/revamp_create2.png" data-fancybox="create-member" data-caption=" Create Member - Account Settings"><img class="triple main" src="images/revamp_create2.png" /></a>
+									<a class="image" href="images/revamp_create_copysettings2.png" data-fancybox="create-member" data-caption=" Create Member - Copy Settings"><img class="triple main" src="images/revamp_create_copysettings2.png" /></a>
+								</td>
+								<td style="width: 50%">
+									<p class="title">Copy settings</p>
+									<ul>
+										<li>Allow users to be able to fall back on previously allowed feature</li>
+									</ul>
+									<p class="title">Success toast</p>
+									<ul>
+										<li>On using copy settings, there is no need to create / replace account profile, user will be directed to share details page with a success toast</li>
+									</ul>
+								</td>
+							</tr>				
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Create Member - Bulk creation -> Quick create</b></td>
+							</tr>
+							<tr>
+								<td style="width: 50%">
+									<a class="image" href="images/revamp_createbulk1.png" data-fancybox="create-member" data-caption="Bulk Create Member"><img class="half main" src="images/revamp_createbulk1.png" /></a>
+									<a class="image" href="images/revamp_createbulk2.png" data-fancybox="create-member" data-caption="Bulk Create Member - Confirmation"><img class="half main" src="images/revamp_createbulk2.png" /></a>
+									<a class="image" href="images/revamp_createbulk3.png" data-fancybox="create-member" data-caption="Bulk Create Member - Share Details"><img class="half main" src="images/revamp_createbulk3.png" /></a>
+									<a class="image" href="images/revamp_createbulk4.png" data-fancybox="create-member" data-caption="Bulk Create Member - Share Details (Expanded)"><img class="half main" src="images/revamp_createbulk4.png" /></a>
+								</td>
+								<td style="width: 50%">
+									<p class="title">Bulk create</p>
+									<ul>
+										<li>Allow user to create more than 1 account at one go</li>
+									</ul>
+									<p class="title">Quick create button</p>
+									<ul>
+										<li>Allow user to bypass account settings and go straight into creating account with either account profile / copy settings option</li>
+										<li>User can only bulk create with quick create options using copy settings / account profiles</li>
+									</ul>
+									<p class="title">Optional profile settings</p>
+									<ul>
+										<li>Text fields in tab are optional, user don't have to fill in to create accounts</li>
+									</ul>
+									<p class="title">Passwords</p>
+									<ul>
+										<li>Passwords and account IDs will be generated automatically for bulk accounts creation</li>
+									</ul>
+									<p class="title">Success page</p>
+									<ul>
+										<li>Message to indicate successful creation of account</li>
+										<li>Unique QR images are generated for each different account created</li>
+										<li>Account ID and passwords are generated randomly and for user to copy to clipboard</li>
+									</ul>
+									<p class="title">Success page - Enlarge button</p>
+									<ul>
+										<li>Option to allow for enlarge particular user details</li>
+										<li>Easier for passing of details to people in real-time situation</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+
+						<hr>
+
+						<!-- account list -->
+						<table id="accountlistflow" class="heuristic">
+							<tr class="title-row">
+								<td colspan="2"><b>Account List</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/accountlist.png" data-fancybox="account-list" data-caption="Account List"><img class="half main" src="images/accountlist.png" /></a>
+									<a class="image" href="images/accountlist_edit.png" data-fancybox="account-list" data-caption="Account List - Edit"><img class="half main" src="images/accountlist_edit.png" /></a>
+									<a class="image" href="images/accountlist_edit_success.png" data-fancybox="account-list" data-caption="Account List - Updated"><img class="main" src="images/accountlist_edit_success.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_accountlist.png" data-fancybox="account-list" data-caption="Account List"><img class="triple main" src="images/revamp_accountlist.png" /></a>
+									<a class="image" href="images/revamp_accountlist_edit.png" data-fancybox="account-list" data-caption="Account List - Edit"><img class="triple main" src="images/revamp_accountlist_edit.png" /></a>
+									<a class="image" href="images/revamp_accountlist_edit_success.png" data-fancybox="account-list" data-caption="Account List - Edit Success"><img class="triple main" src="images/revamp_accountlist_edit_success.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Underlined text</p>
+									<ul>
+										<li>Underlined username to indicate interaction -> click in to view downline</li>
+									</ul>
+									<p class="title">Unusual edit column</p>
+									<ul>
+										<li>More common for editing column to be the last than in the center / front</li>
+									</ul>
+									<p class="title">Edit</p>
+									<ul>
+										<li>Inline row editing, click in pencil icon to allow editing mode</li>
+									</ul>
+									<p class="title">Success dialog</p>
+									<ul>
+										<li>On save, successful dialog will appear</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Underlined text</p>
+									<ul>
+										<li>Underlined username to indicate interaction -> click in to view downline</li>
+									</ul>
+									<p class="title">Edit column</p>
+									<ul>
+										<li>Edit column moved to last column</li>
+									</ul>
+									<p class="title">New edit row</p>
+									<ul>
+										<li>On edit, new row will appear for editing, previous values are retained in original row for reference sake</li>
+										<li>Allow for unlock accounts only, for already unlocked accounts, checkbox will be disabled</li>
+									</ul>
+									<p class="title">Pagination</p>
+									<ul>
+										<li>Pagination allow for only querying that amount of data from backend at 1 go, reducing loading speed</li>
+										<li>Improve overall experience by giving users to freedom to select the number of rows to view per page</li>
+										<li><a href="https://www.primefaces.org/primevue/showcase/#/datatable/paginator" target="_blank">Link: PrimeVue Pagination</a></li>
+									</ul>
+									<p class="title">Success toast</p>
+									<ul>
+										<li>On save, success toast will appear to show data has been updated successfully</li>
+										<li>Updated row will be highlighted to indicate the row where data has been updated</li>
+									</ul>
+									<p class="title">Password policy tooltip</p>
+									<ul>
+										<li>Lets user to reference on password policy on the go</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="sutitle-row">
+								<td colspan="2"><b>Account List - Edit components</b></td>
+							</tr>
+							<tr>
+								<td style="width: 50%">
+									<a class="image" href="images/revamp_accountlist_status.png" data-fancybox="account-list" data-caption="Account List - Open"><img class="main" src="images/revamp_accountlist_status.png" /></a>
+									<a class="image" href="images/revamp_accountlist_status2.png" data-fancybox="account-list" data-caption="Account List - Suspended"><img class="main" src="images/revamp_accountlist_status2.png" /></a>
+									<a class="image" href="images/revamp_accountlist_status3.png" data-fancybox="account-list" data-caption="Account List - Closed"><img class="main" src="images/revamp_accountlist_status3.png" /></a>
+									<hr>
+									<a class="image" href="images/revamp_accountlist_disablelock.png" data-fancybox="account-list" data-caption="Account List - Disable Lock"><img class="main" src="images/revamp_accountlist_disablelock.png" /></a>
+									<a class="image" href="images/revamp_accountlist_unlock.png" data-fancybox="account-list" data-caption="Account List - Unlock"><img class="main" src="images/revamp_accountlist_unlock.png" /></a>
+									<hr>
+									<a class="image" href="images/revamp_accountlist_tooltip.png" data-fancybox="account-list" data-caption="Account List - Password Tooltip"><img class="main" src="images/revamp_accountlist_tooltip.png" /></a>
+								</td>
+								<td>
+									<p class="title">Status toggle</p>
+									<ul>
+										<li>Click to toggle between status</li>
+										<li><a href="https://www.primefaces.org/primevue/showcase/#/togglebutton" target="_blank">Link: PrimeVue Togglebutton</a></li>
+									</ul>
+									<p class="title">Lock</p>
+									<ul>
+										<li>Only able to unlock accounts</li>
+									</ul>
+									<p class="title">Monitor</p>
+									<ul>
+										<li>Add to / remove from monitored accounts</li>
+									</ul>
+									<p class="title">Tooltip</p>
+									<ul>
+										<li>Providing help to user on the go</li>
+										<li>Direct reference for user to check password policy instead of having to scroll down / go somewhere else</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Account List - Hierarchy</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/accountlist_ma.png" data-fancybox="account-list" data-caption="Account List - MA"><img class="main half" src="images/accountlist_ma.png" /></a>
+									<a class="image" href="images/accountlist.png" data-fancybox="account-list" data-caption="Account List - Agent"><img class="main half" src="images/accountlist.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_accountlist.png" data-fancybox="account-list" data-caption="Account List - MA"><img class="half main" src="images/revamp_accountlist.png" /></a>
+									<a class="image" href="images/revamp_accountlist_agent.png" data-fancybox="account-list" data-caption="Account List - Agent"><img class="half main" src="images/revamp_accountlist_agent.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Breadcrumbs</p>
+									<li>Underlined text indicate links, user can click on underlined text to go back to selected hierarchical level</li>
+								</td>
+								<td>
+									<p class="title">Breadcrumbs</p>
+									<li>Underlined text indicate links, user can click on underlined text to go back to selected hierarchical level</li>
+									<li>Breadcrumbs only appear on page where there is hierachy indication</li>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Account List - Filters </b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/status_filter.png" data-fancybox="account-list" data-caption="Global Status Filter"><img class="main" src="images/status_filter.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_accountlist_header.png" data-fancybox="account-list" data-caption="Sorting | Filter"><img class="main" src="images/revamp_accountlist_header.png" /></a>
+									<hr>
+									<a class="image" href="images/revamp_accountlist_usernamefilter.png" data-fancybox="account-list" data-caption="Column Filter - Username"><img class="main" src="images/revamp_accountlist_usernamefilter.png" /></a>
+									<a class="image" href="images/revamp_accountlist_statusfilter.png" data-fancybox="account-list" data-caption="Column Filter - Status"><img class="main" src="images/revamp_accountlist_statusfilter.png" /></a>
+									<a class="image" href="images/revamp_accountlist_lockfilter.png" data-fancybox="account-list" data-caption="Column Filter - Lock"><img class="main" src="images/revamp_accountlist_lockfilter.png" /></a>
+									<a class="image" href="images/revamp_accountlist_monitorfilter.png" data-fancybox="account-list" data-caption="Column Filter - Monitor"><img class="main" src="images/revamp_accountlist_monitorfilter.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Global status filter</p>
+									<ul>
+										<li>Filter out active / suspended / closed accounts</li>
+									</ul>
+									<p class="title">Mismatch of term</p>
+									<ul>
+										<li>Filter list as "Open", but under status it's "Active"</li>
+										<li>User need to remember that "Active" can mean "Open" or "Open + Suspended"</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Columns filter</p>
+									<ul>
+										<li>Gives user freedom to filter what they want to see</li>
+										<li>Aligned terms for filter with content in the table</li>
+										<li><a href="https://www.primefaces.org/primevue/showcase/#/datatable/filter" target="_blank">Link: PrimeVue Table Column Filter</a></li>
+									</ul>
+									<p class="title">Columns sorting</p>
+									<ul>
+										<li>Gives user freedom to sort by the order they want for certain columns</li>
+										<li><a href="https://www.primefaces.org/primevue/showcase/#/datatable/sort" target="_blank">Link: PrimeVue Table Sorting</a></li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+
+						<hr>
+
+						<!-- Report Win Loss -->
+						<table id="winlossflow" class="heuristic">
+							<tr class="title-row">
+								<td colspan="2"><b>Win Lose Report</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/report_winloss.png" data-fancybox="winlose" data-caption="Win Lose Report"><img class="main" src="images/report_winloss.png" /></a>
+									<a class="image" href="images/report_winloss_date.png" data-fancybox="winlose" data-caption="Win Lose Report - Date Filter"><img class="main" src="images/report_winloss_date.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_winloss_ma.png" data-fancybox="winlose" data-caption="Win Lose Report - MA"><img class="triple main" src="images/revamp_winloss_ma.png" /></a>
+									<a class="image" href="images/revamp_winloss_a.png" data-fancybox="winlose" data-caption="Win Lose Report - Agent"><img class="triple main" src="images/revamp_winloss_a.png" /></a>
+									<a class="image" href="images/revamp_winloss_player.png" data-fancybox="winlose" data-caption="Win Lose Report (Betlist) - Player"><img class="triple main" src="images/revamp_winloss_player.png" /></a>
+									<a class="image" href="images/revamp_winloss_date.png" data-fancybox="winlose" data-caption="Win Lose Report - Date Filter"><img class="half main" src="images/revamp_winloss_date.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Breadcrumbs</p>
+									<ul>
+										<li>Underlined text indicate links, user can click on underlined text to go back to selected hierarchical level</li>
+									</ul>
+									<p class="title">Grand total row</p>
+									<ul>
+										<li>Grand total row highlighted in yellow for emphasis</li>
+									</ul>
+									<p class="title">Positive / negative text</p>
+									<ul>
+										<li>Positive figures in blue, negative figures in red to emphasis on profit / loss</li>
+									</ul>
+									<p class="title">Date filter</p>
+									<ul>
+										<li>2 individual FROM date and TO date field to fill</li>
+										<li>Small buttons to click for dates on calendar drop down</li>
+										<li>Separate predefined date range</li>
+									</ul>
+									<p class="title">Product selection</p>
+									<ul>
+										<li>Checkbox buttons for product selection</li>
+									</ul>
+									<p class="title">Combine / separate products</p>
+									<ul>
+										<li>Radio button for selection</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Breadcrumbs</p>
+									<ul>
+										<li>Underlined text indicate links, user can click on underlined text to go back to selected hierarchical level</li>
+										<li>Breadcrumbs only appear on page where there is hierachy indication</li>
+									</ul>
+									<p class="title">Grand total row</p>
+									<ul>
+										<li>Grand total row highlighted in yellow for emphasis</li>
+										<li>Sticky grand total row</li>
+									</ul>
+									<p class="title">Positive / negative text</p>
+									<ul>
+										<li>Only negative text in red, too many colors might overwhelm the users</li>
+										<li>Only grand total row is bold for emphasis</li>
+									</ul>
+									<p class="title">Date filter</p>
+									<ul>
+										<li>1 text field to click on for selecting date range</li>
+										<li>Small buttons to click for dates on calendar drop down</li>
+										<li>Predefined date range for quick access and range highlight in same dropdown for better visualization</li>
+									</ul>
+									<p class="title">Product selection</p>
+									<ul>
+										<li>Toggle buttons for product selection</li>
+										<li>Bigger click space</li>
+									</ul>
+									<p class="title">Combine / separate products</p>
+									<ul>
+										<li>Toggle buttons for selection</li>
+										<li>Bigger click space</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Win Lose Report > Combine / Separate products</b></td>
+							</tr>
+							<tr>
+								<td style="width: 50%">
+									<a class="image" href="images/revamp_winloss_combine.png" data-fancybox="winlose" data-caption="Win Lose Report - Combine"><img class="half main" src="images/revamp_winloss_combine.png" /></a>
+									<a class="image" href="images/revamp_winloss_separate.png" data-fancybox="winlose" data-caption="Win Lose Report - Separate"><img class="half main" src="images/revamp_winloss_separate.png" /></a>
+								</td>
+								<td style="width: 50%">
+									<p class="title">Separate products</p>
+									<ul>
+										<li>Sticky header row</li>
+										<li><a href="https://www.primefaces.org/primevue/showcase/#/datatable/rowgroup" target="_blank">Link: PrimeVue Rowgroup</a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Win Lose Report > Show / hide settings</b></td>
+							</tr>
+							<tr>
+								<td style="width: 50%">
+									<a class="image" href="images/revamp_winloss_settings.png" data-fancybox="winlose" data-caption="Win Lose Report - Settings"><img class="half main" src="images/revamp_winloss_settings.png" /></a>
+									<a class="image" href="images/revamp_winloss_settingshide.png" data-fancybox="winlose" data-caption="Win Lose Report - Hide Settings"><img class="half main" src="images/revamp_winloss_settingshide.png" /></a>
+								</td>
+								<td style="width: 50%">
+									<p class="title">Show / hide settings</p>
+									<ul>
+										<li>Hide settings to allow for more scrollable space for table</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+
+						<hr>
+
+						<!-- transfer -->
+						<table id="transferflow" class="heuristic heuristic-half">
+							<tr class="title-row">
+								<td colspan="2"><b>Transfer > Transfer Yesterday</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/transfer_.png" data-fancybox="transfer" data-caption="Transfer Yesterday"><img class="half main" src="images/transfer_.png" /></a>
+									<a class="image" href="images/transfer.png" data-fancybox="transfer" data-caption="Transfer Yesterday"><img class="half main" src="images/transfer.png" /></a>
+									<a class="image" href="images/transfer_confirm.png" data-fancybox="transfer" data-caption="Transfer Yesterday - Confirmation Dialog"><img class="half main" src="images/transfer_confirm.png" /></a>
+									<a class="image" href="images/transfer_confirm2.png" data-fancybox="transfer" data-caption="Transfer Yesterday - Success Dialog"><img class="half main" src="images/transfer_confirm2.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_transfer.png" data-fancybox="transfer" data-caption="Transfer Yesterday"><img class="half main" src="images/revamp_transfer.png" /></a>
+									<a class="image" href="images/revamp_transfer_select.png" data-fancybox="transfer" data-caption="Transfer Yesterday - Select"><img class="half main" src="images/revamp_transfer_select.png" /></a>
+									<a class="image" href="images/revamp_transfer_select_confirm.png" data-fancybox="transfer" data-caption="Transfer Yesterday - Confirmation Dialog"><img class="half main" src="images/revamp_transfer_select_confirm.png" /></a>
+									<a class="image" href="images/revamp_transfer_success.png" data-fancybox="transfer" data-caption="Transfer Yesterday - Success Toast"><img class="half main" src="images/revamp_transfer_success.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Checkbox</p>
+									<ul>
+										<li>Weird positioning of checkbox</li>
+									</ul>
+									<p class="title">Confirmation Dialog</p>
+									<ul>
+										<li>Confirmation dialog prompt to confirm user's action of transferring yesterday balance</li>
+									</ul>
+									<p class="title">Success Dialog</p>
+									<ul>
+										<li>Success dialog appear after confirming transferring yesterday's balance</li>
+									</ul>
+									<p class="title">Header row / footer row</p>
+									<ul>
+										<li>Need to scroll up and down to look for header row / footer row</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Checkbox</p>
+									<ul>
+										<li>Moved to first column instead of in the center</li>
+									</ul>
+									<p class="title">Confirmation Dialog</p>
+									<ul>
+										<li>Confirmation dialog prompt to confirm user's action of transferring yesterday balance</li>
+									</ul>
+									<p class="title">Success toast</p>
+									<ul>
+										<li>On confirming transferring yesterday's balance, show success toast to show successful action</li>
+									</ul>
+									<p class="title">Sticky header row / footer row</p>
+									<ul>
+										<li>For smaller screens, don't need to scroll up and down to look for column details / actions</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Transfer > Single Transfer</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/transfer_account.png" data-fancybox="transfer" data-caption="Single Transfer"><img class="half main" src="images/transfer_account.png" /></a>
+									<a class="image" href="images/transfer_account_confirm.png" data-fancybox="transfer" data-caption="Single Transfer _ Confirmation Dialog"><img class="half main" src="images/transfer_account_confirm.png" /></a>
+									<a class="image" href="images/transfer_account_success.png" data-fancybox="transfer" data-caption="Single Transfer - Success Dialog"><img class="half main" src="images/transfer_account_success.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_transfer.png" data-fancybox="transfer" data-caption="Single Transfer"><img class="half main" src="images/revamp_transfer.png" /></a>
+									<a class="image" href="images/revamp_singletransfer_edit.png" data-fancybox="transfer" data-caption="Single Transfer - Edit"><img class="half main" src="images/revamp_singletransfer_edit.png" /></a>
+									<a class="image" href="images/revamp_transfer_success.png" data-fancybox="transfer" data-caption="Single Transfer - Success Toast"><img class="half main" src="images/revamp_transfer_success.png" /></a>
+									<hr>
+									<a class="image" href="images/revamp_singletransfer_tooltip.png" data-fancybox="transfer" data-caption="Single Transfer - Tooltip"><img class="main" src="images/revamp_singletransfer_tooltip.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Cash balance</p>
+									<ul>
+										<li>Click on cash balance for single transfer drop down to appear</li>
+										<li>Not very obvious that it can be interact with</li>
+									</ul>
+									<p class="title">Confirmation Dialog</p>
+									<ul>
+										<li>Confirmation dialog prompt to confirm user's action of single transfer</li>
+									</ul>
+									<p class="title">Success Dialog</p>
+									<ul>
+										<li>Success dialog appear after confirming single transfer</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Cash balance</p>
+									<ul>
+										<li>Dotted underline text to indicate interaction</li>
+										<li>On click, a new edit row will appear for single transfer</li>
+									</ul>
+									<p class="title">Consolidated total outstanding column</p>
+									<ul>
+										<li>User can click in to be redirected to outstanding page if they want to know more</li>
+									</ul>
+									<p class="title">Edit row</p>
+									<ul>
+										<li>A before / after to show after transfer results</li>
+										<li>Tooltip to show outstanding balance for different products (want to know basis)</li>
+									</ul>
+									<p class="title">Success toast</p>
+									<ul>
+										<li>On confirming single transfer, show success toast to show successful action</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="subtitle-row">
+								<td colspan="2"><b>Transfer > Outstanding > Betlist</b></td>
+								<tr>
+									<td>
+										<a class="image" href="images/transfer2.png" data-fancybox="transfer" data-caption="Transfer"><img class="triple main" src="images/transfer2.png" /></a>
+										<a class="image" href="images/outstanding.png" data-fancybox="transfer" data-caption="Transfer > Outstanding (Sports)"><img class="triple main" src="images/outstanding.png" /></a>
+										<a class="image" href="images/transfer_outstanding_betlist.png" data-fancybox="transfer" data-caption="Transfer > Outstanding (Sports) > Betlist"><img class="triple main" src="images/transfer_outstanding_betlist.png" /></a>
+									</td>
+									<td>
+										<a class="image" href="images/revamp_transfer.png" data-fancybox="transfer" data-caption="Transfer"><img class="triple main" src="images/revamp_transfer.png" /></a>
+										<a class="image" href="images/revamp_transfer_outstanding.png" data-fancybox="transfer" data-caption="Transfer > Outstanding"><img class="triple main" src="images/revamp_transfer_outstanding.png" /></a>
+										<a class="image" href="images/revamp_transfer_outstanding_betlist.png" data-fancybox="transfer" data-caption="Transfer > Outstanding > Betlist"><img class="triple main" src="images/revamp_transfer_outstanding_betlist.png" /></a>
+									</td>
+									<tr>
+										<td>
+											<p class="title">Outstanding</p>
+											<ul>
+												<li>Click on Total Outstanding columns' figures to view account's outstanding balance</li>
+												<li>Very subtle</li>
+											</ul>
+											<p class="title">Breadcrumb</p>
+											<ul>
+												<li>Breadcrumb for outstanding hierarchical view</li>
+												<li>Unable to go back to transfer page though</li>
+											</ul>
+										</td>
+										<td>
+											<p class="title">Outstanding</p>
+											<ul>
+												<li>Click on Total Outstanding columns' figures to view account's outstanding balance</li>
+												<li>Underlined to tell user it can be interacted with</li>
+											</ul>
+											<p class="title">Breadcrumb</p>
+											<ul>
+												<li>Breadcrumb for outstanding hierarchical view</li>
+												<li>Show the full flow in breadcrumb on how user came to this page, so it's possible for them to backtrack to previous steps if they want to</li>
+											</ul>
+										</td>
+									</tr>
+								</tr>
+							</tr>
+						</table>
+
+						<hr> 
+
+						<!-- full transfer settings -->
+						<table id="fulltransferflow" class="heuristic heuristic-half">
+							<tr class="title-row">
+								<td colspan="2"><b>Full Transfer Settings</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/full_transfer_1.png" data-fancybox="full-transfer" data-caption="Full Transfer Settings"><img class="triple main" src="images/full_transfer_1.png" /></a>
+									<a class="image" href="images/full_transfer_2.png" data-fancybox="full-transfer" data-caption="Full Transfer Settings"><img class="triple main" src="images/full_transfer_2.png" /></a>
+									<a class="image" href="images/full_transfer_updated.png" data-fancybox="full-transfer" data-caption="Full Transfer Settings - Updated"><img class="triple main" src="images/full_transfer_updated.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_full_transfer.png" data-fancybox="full-transfer" data-caption="Full Transfer Settings"><img class="triple main" src="images/revamp_full_transfer.png" /></a>
+									<a class="image" href="images/revamp_full_transfer_select.png" data-fancybox="full-transfer" data-caption="Full Transfer Settings - Select"><img class="triple main" src="images/revamp_full_transfer_select.png" /></a>
+									<a class="image" href="images/revamp_full_transfer_edit.png" data-fancybox="full-transfer" data-caption="Full Transfer Settings - Bulk Edit Dialog"><img class="triple main" src="images/revamp_full_transfer_edit.png" /></a>
+									<a class="image" href="images/revamp_full_transfer_success.png" data-fancybox="full-transfer" data-caption="Full Transfer Settings - Updated Successfully"><img class="triple main" src="images/revamp_full_transfer_success.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Checkbox</p>
+									<ul>
+										<li>Weird positioning of checkbox</li>
+									</ul>
+									<p class="title">Header row / footer row</p>
+									<ul>
+										<li>Need to scroll up and down to look for header row / footer row</li>
+									</ul>
+									<p class="title">Unusual bulk editing behaviour</p>
+									<ul>
+										<li>User might need to take some time to understand why select drop down contains a "-"</li>
+									</ul>
+									<p class="title">Status column</p>
+									<ul>
+										<li>On clicking "Go", page will refresh immediately and status column will be updated</li>
+										<li>Not enough information on status column</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Checkbox</p>
+									<ul>
+										<li>Moved to first column instead of in the center</li>
+									</ul>
+									<p class="title">Sticky header row / footer row</p>
+									<ul>
+										<li>For smaller screens, don't need to scroll up and down to look for column details / actions</li>
+									</ul>
+									<p class="title">Bulk edit</p>
+									<ul>
+										<li>For bulk edit to open a new dialog, instead of doing it in a "inline settings"</li>
+										<li>Selected days will be enabled for transfer</li>
+									</ul>
+									<p class="title">Success toast</p>
+									<ul>
+										<li>On confirming edit transfer settings, show success toast to show successful update</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+
+						<hr> 
+
+						<!-- credit -->
+						<table id="creditflow" class="heuristic heuristic-half">
+							<tr class="title-row">
+								<td colspan="2"><b>Credit</b></td>
+							</tr>
+							<tr>
+								<td>
+									<a class="image" href="images/credit.png" data-fancybox="credit" data-caption="Credit"><img class="triple main" src="images/credit.png" /></a>
+									<a class="image" href="images/credit_edit.png" data-fancybox="credit" data-caption="Credit - Edit"><img class="triple main" src="images/credit_edit.png" /></a>
+									<a class="image" href="images/credit_success.png" data-fancybox="credit" data-caption="Credit - Successfully Updated"><img class="triple main" src="images/credit_success.png" /></a>
+									<hr>
+									<a class="image" href="images/credit_agent.png" data-fancybox="credit" data-caption="Credit - Downline"><img class="triple main" src="images/credit_agent.png" /></a>
+								</td>
+								<td>
+									<a class="image" href="images/revamp_credit.png" data-fancybox="credit" data-caption="Credit"><img class="triple main" src="images/revamp_credit.png" /></a>
+									<a class="image" href="images/revamp_credit_edit.png" data-fancybox="credit" data-caption="Credit - Edit"><img class="triple main" src="images/revamp_credit_edit.png" /></a>
+									<a class="image" href="images/revamp_credit_success.png" data-fancybox="credit" data-caption="Credit - Successfully Updated"><img class="triple main" src="images/revamp_credit_success.png" /></a>
+									<hr>
+									<a class="image" href="images/revamp_credit_downline.png" data-fancybox="credit" data-caption="Credit - Downline"><img class="triple main" src="images/revamp_credit_downline.png" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="title">Member count</p>
+									<ul>
+										<li>Shows member count, but not clear on what's the figure in bracket</li>
+									</ul>
+									<p class="title">Live casino & casino games columns</p>
+									<ul>
+										<li>Not sure what happened to the other products</li>
+									</ul>
+									<p class="title">Success dialog</p>
+									<ul>
+										<li>On clicking save icon, success dialog will appear to show successful update of data row</li>
+									</ul>
+									<p class="title">Breadcrumbs</p>
+									<ul>
+										<li>Underlined username to signify that it's clickable</li>
+										<li>Breadcrumbs to allow user to backtrack to SMA / MA level</li>
+									</ul>
+								</td>
+								<td>
+									<p class="title">Member count</p>
+									<ul>
+										<li>Shows total number of member count, (dark green - open, red - closed, yellow - suspended), consistent with status labels used in status column</li>
+									</ul>
+									<p class="title">Live casino & casino games columns</p>
+									<ul>
+										<li>Removed from credit page, can be done in bet settings</li>
+									</ul>
+									<p class="title">Success toast</p>
+									<ul>
+										<li>Success toast will appear to show update action is successful</li>
+									</ul>
+									<p class="title">Breadcrumbs</p>
+									<ul>
+										<li>Underlined username to signify that it's clickable</li>
+										<li>Breadcrumbs to allow user to backtrack to SMA / MA level</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
 					</div>
 				</section>
 
-				<!-- clicks tracking -->
-					<section id="clicks-tracking" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h1>Clicks / User Actions Tracking</h1>
-							<h2>Current Libra</h2>
-							<p>Note: number listed is the number of clicks applied by user.</p>
-							<div class="features">
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/click_login.png" data-lightbox="clicks" data-title="Login Page"><img class="main" src="images/click_login.png" alt="Login Page" /></a>
-									</section>
-									<section class="content border-left">
-										<a class="image" href="images/click_tnc.png" data-lightbox="clicks" data-title="T&C Page"><img class="main" src="images/click_tnc.png" alt="T&C Page" /></a>
-									</section>
-									<section class="content border-left">
-										1. Click on Login Name field -> enter login Name <br />
-										2. Click on Password field -> enter password <br />
-										(Additional 2 clicks might occur for changing of language) <br />
-										3. Click on Sign in button <br />
-										4. Click to agree to T&C <br />
-										(Or click to disagree and start from login page again)
-									</section>
-								</div>
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/click_dashboard.png" data-lightbox="clicks" data-title="Dashboard Page"><img class="main" src="images/click_dashboard.png" alt="Dashboard Page" /></a>
-									</section>
-									<section class="content border-left">
-										<a class="image" href="images/click_securitycode.png" data-lightbox="clicks" data-title="Security Code Page"><img class="main" src="images/click_securitycode.png" alt="Security Code Page" /></a>
-									</section>
-									<section class="content border-left">
-										5. Click on Member Mgmt to show sub menu items <br />
-										6. Click on New Member to go to create member page <br />
-										7. Click on 1<sup>st</sup> Digit field, after filling in, focus will automatically go to the subsequent field <br />
-										8. Click on Submit button
-									</section>
-								</div>
-							</div>
-							<h3>Quick Creation w/o Copy Settings</h3>
-							<div class="features">
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/click_createmember.png" data-lightbox="clicks" data-title="Create Member Page"><img class="main" src="images/click_createmember.png" alt="Create Member Page" /></a>
-									</section>
-									<section class="content border-left">
-										<a class="image" href="images/click_success.png" data-lightbox="clicks" data-title="Member Created Dialog"><img class="main" src="images/click_success.png" alt="Member Created Dialog" /></a>
-									</section>
-									<section class="content border-left">
-										9: Click on 1<sup>st</sup> field to show other options <br />
-										10: Click on options shown from 9 <br />
-										11&12: Same as 9&10 <br />
-										13&14: Same as 9&10 <br />
-										15: Click on password field -> enter password <br />
-										(password might not pass, scroll down to check password policy) <br />
-										16: Click on validation field -> enter validation code <br />
-										(old style validation might not be clear for certain images) <br />
-										17: Click on Create button
-										18: Click on OK button to acknowledge successful account creation
-									</section>
-								</div>
-								<div class="section-row">
-									<section class="content"></section>
-									<section class="content"></section>
-									<section class="content align-right">
-										Total number of clicks incl. starting from login: <b>17</b> <br />
-										Number of clicks for quick creation w/o copy settings: <b>9</b>
-									</section>
-								</div>
-							</div>
-							<h3>Quick Creation with Copy Settings</h3>
-							<div class="features">
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/click_copysettings.png" data-lightbox="clicks" data-title="Create Member (Show Copy Settings)"><img class="main" src="images/click_copysettings.png" alt="Create Member (Show Copy Settings)" /></a>
-									</section>
-									<section class="content border-left">
-										<a class="image" href="images/click_copysettings2.png" data-lightbox="clicks" data-title="Create Member Page (With Copy Settings)"><img class="main" src="images/click_copysettings2.png" alt="Create Member Page (With Copy Settings)" /></a>
-									</section>
-									<section class="content border-left">
-										9: Click on account ID field to show options <br />
-										10: Click on 1 of the options to copy settings from <br />
-										11: Click on copy settings button to confirm action<br />
-										12: Click on 1<sup>st</sup> field to show other options <br />
-										13: Click on options shown from 12 <br />
-										14&15: Same as 12&13 <br />
-										16&17: Same as 12&13 <br />
-										18: Click on password field -> enter password <br />
-										19: Click on validation field -> enter validation <br />
-									</section>
-								</div>
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/click_copysettings_success.png" data-lightbox="clicks" data-title="Member Created Dialog"><img class="main" src="images/click_copysettings_success.png" alt="Member Created Dialog" /></a>
-									</section>
-									<section class="content border-left"></section>
-									<section class="content border-left">
-										20: Click on OK button to acknowledge successful account creation
-									</section>
-								</div>
-								<div class="section-row">
-									<section class="content"></section>
-									<section class="content"></section>
-									<section class="content align-right">
-										Total number of clicks incl. starting from login: <b>20</b> <br />
-										Number of clicks just for quick creation with copy settings: <b>12</b>
-									</section>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section class="wrapper style4 fade-up">
-						<div class="inner">
-							<h1>Clicks / User Actions Tracking Cont.</h1>
-							<h2>Libra Revamp</h2>
-							<p>Note: number listed is the number of clicks applied by user.</p>
-							<div class="features">
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/click2_login.png" data-lightbox="clicks" data-title="Login Page"><img class="main" src="images/click2_login.png" alt="Login Page" /></a>
-									</section>
-									<section class="content border-left">
-										<a class="image" href="images/click2_dashboard.png" data-lightbox="clicks" data-title="Dashboard"><img class="main" src="images/click2_dashboard.png" alt="Dashboard" /></a>
-									</section>
-									<section class="content border-left">
-										1. Click on Login Name field -> enter login Name <br />
-										2. Click on Password field -> enter password <br />
-										(Additional 2 clicks might occur for changing of language) <br />
-										3. Click on Sign in button <br />
-										(Additional click for if users want to check out the T&C page) <br />
-										4. Click on quick action's Create Member to go directly to create member page <br />
-										Optional 4, 5: A longer route to go to Create Member page from menu bar
-									</section>
-								</div>
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/click2_securitycode.png" data-lightbox="clicks" data-title="Security Code Page"><img class="main" src="images/click2_securitycode.png" alt="Security Code Page" /></a>
-									</section>
-									<section class="content border-left"></section>
-									<section class="content border-left">
-										5. 1<sup>st</sup> digit field us already on focus on load, after filling in, focus will automatically go to the subsequent field, so just fill in and click on submit <br />
-									</section>
-								</div>
-							</div>
-							<h3>Quick Creation w/o Copy Settings</h3>
-							<div class="features">
-								<div class="section-row">
-									<section class="content border-left">
-										<a class="image" href="images/click2_createmember.png" data-lightbox="clicks" data-title="Create Member Page"><img class="main" src="images/click2_createmember.png" alt="Create Member Page" /></a>
-									</section>
-									<section class="content">
-										<a class="image" href="images/click2_createconfirm.png" data-lightbox="clicks" data-title="Create Confirmation Dialog"><img class="main" src="images/click2_createconfirm.png" alt="Create Confirmation Dialog" /></a>
-									</section>								<section class="content border-left">
-										6, 7. Click on Account ID field to show options for available account ID and click on 1 of the options<br />
-										8. Click on button to generate password <br /> 
-										9. Click on Quick Create Account<br />
-										10. Click on OK button<br />
-									</section>
-								</div>
-								<div class="section-row">
-									<section class="content"></section>
-									<section class="content"></section>
-									<section class="content align-right">
-										Total number of clicks incl. starting from login: <b>10</b> <br />
-										Number of clicks just for quick creation w/o copy settings: <b>5</b>
-									</section>
-								</div>
-							</div>
-							<h3>Quick Creation with Copy Settings</h3>
-							<div class="features">
-								<div class="section-row">
-									<section class="content">
-										<a class="image" href="images/click2_createmembercopy.png" data-lightbox="clicks" data-title="Create Member Page (Copy Settings)"><img class="main" src="images/click2_createmembercopy.png" alt="Create Member Page (Copy Settings)" /></a>
-									</section>
-									<section class="content">
-										<a class="image" href="images/click2_createconfirmcopy.png" data-lightbox="clicks" data-title="Member Created Dialog"><img class="main" src="images/click2_createconfirmcopy.png" alt="Member Created Dialog" /></a>
-									</section>
-									<section class="content border-left">
-										6. Click on Copy Settings to show Copy Settings option <br />
-										7, 8. Click on copy settings field to show account list options and choose 1 of the options
-										9, 10. Click on Account ID field to show options for available account ID and click on 1 of the options<br />
-										11. Click on button to generate password <br /> 
-										12. Click on Quick Create Account <br />
-										13. Click on OK button
-									</section>
-								</div>
-								<div class="section-row">
-									<section class="content"></section>
-									<section class="content"></section>
-									<section class="content align-right">
-										Total number of clicks incl. starting from login: <b>13</b> <br />
-										Number of clicks just for quick creation w/o copy settings: <b>8</b>
-									</section>
-								</div>
-							</div>
-							<h3>Comparison Chart for Create Member Page only</h3>
-							<div class="features">
-								<div class="section-row">
-									<section class="content"></section>
-									<section class="content border-left align-center">
-										Current Libra
-									</section>
-									<section class="content border-left align-center">
-										Libra Revamp
-									</section>
-								</div>
-								<div class="section-row">
-									<section class="content align-center">
-										Without Copy Settings
-									</section>
-									<section class="content border-left align-center">
-										9
-									</section>
-									<section class="content border-left align-center">
-										<b>5</b>
-									</section>
-								</div>
-								<div class="section-row">
-									<section class="content align-center">
-										With Copy Settings
-									</section>
-									<section class="content border-left align-center">
-										12
-									</section>
-									<section class="content border-left align-center">
-										<b>8</b>
-									</section>
-								</div>
-							</div>
-						</div>
-					</section>
 			</div>
 
 		<!-- Footer -->
@@ -858,8 +1763,9 @@
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/lightbox.min.js"></script> 
+			<script src="assets/js/jquery.fancybox.min.js"></script> 
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
 	</body>
 </html>
