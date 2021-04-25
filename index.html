@@ -29,7 +29,7 @@
 							<li><a href="#business-goals">Business Goals</a></li>
 							<!-- <li><a href="#statistics">Users Behaviour Statistics</a></li> -->
 							<li><a href="#color-scheming">Color Scheming</a></li>
-							<li><a href="#form-elements">Form Elements Research</a></li>
+							<li><a href="#form-elements">Elements / Components Research</a></li>
 							<li><a href="#features-flow">Features' Flow</a></li>
 							<li><a href="#loginflow">FF - Login</a></li>
 							<li><a href="#dashboardflow">FF - Dashboard</a></li>
@@ -155,7 +155,7 @@
 				<!-- Form Elements Research-->
 					<section id="form-elements" class="wrapper style4 fade-up">
 						<div class="inner">
-							<h1>Form Elements Research</h1>
+							<h1>Elements / Components Research</h1>
 							<div class="features form-labels">
 								<div class="section-row title-row">
 									Form Labels
@@ -325,6 +325,296 @@
 											</tr>
 											<tr>
 												<td colspan="2">Both can be used since search is not really required for select dropdowns that does not have a lot of options.</td>
+											</tr>
+										</table>
+									</section>
+								</div>
+							</div>
+
+							<div class="features form-labels">
+								<div class="section-row title-row">
+									Tables
+								</div>
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/table.png" data-fancybox="form-label" data-caption="Table 1"><img class="main" src="images/table.png" /></a>
+										1) Table 1
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/table2.png" data-fancybox="form-label" data-caption="Table 2"><img class="main" src="images/table2.png" /></a>
+										<a class="image" href="images/table3.png" data-fancybox="form-label" data-caption="Table 2 - With Filter Settings"><img class="main" src="images/table3.png" /></a>
+										1) Table 2
+									</section>
+									<section class="content border-left">
+										<table class="comparison">
+											<tr>
+												<th>1) Table 1</th>
+												<th>2) Table 2</th>
+											</tr>
+											<tr>
+												<td>Filters directly above header row</td>
+												<td>Filters separated in settings, allow user to focus on table data</td>
+											</tr>
+											<tr>
+												<td>Stagnant filters</td>
+												<td>Filter settings can be hidden to allow for space for table</td>
+											</tr>
+											<tr>
+												<td>Header row in different color to signify header row</td>
+												<td>Thicker header row, text in bold for emphasis</td>
+											</tr>
+											<tr>
+												<td>Thinner rows to squeeze and show more data in 1 go</td>
+												<td>Thicker rows, table look neater and less cramped</td>
+											</tr>
+											<tr>
+												<td>No limit to scrolling, might have technical constraint in allowing for sticky header / footer</td>
+												<td>Limited scrolling to be within table, allow for sticky header / footer</td>
+											</tr>
+											<tr class="icon-row">
+												<td><img class="cross" src="images/close.png" /></td>
+												<td><img class="tick" src="images/check.png" /></td>
+											</tr>
+										</table>
+									</section>
+								</div>
+								<div class="section-row title-row">
+									Tables -> Status
+								</div>
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/table_status.png" data-fancybox="form-label" data-caption="Table -> Status"><img class="main" src="images/table_status.png" /></a>
+										<a class="image" href="images/status_filter.png" data-fancybox="form-label" data-caption="Table -> Status Filter"><img class="main" src="images/status_filter.png" /></a>
+										1) Highlighted rows / suspend column
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/table_status2.png" data-fancybox="form-label" data-caption="Table  -> Status"><img class="main" src="images/table_status2.png" /></a>
+										2) Add an extra column for status
+									</section>
+									<section class="content border-left">
+										<table class="comparison">
+											<tr>
+												<th>1) Highlighted rows / suspend column</th>
+												<th>2) Add an extra column for status</th>
+											</tr>
+											<tr>
+												<td>
+													<ul>
+														<li>Highlighted in yellow rows to signify suspended for certain tables</li>
+														<li>Some tables add a "Suspend" column to show "Suspend" status</li>
+														<li>Greyed out rows to signify account is closed</li>
+														<li>Some tables add additional "Status" role to show "Open / Closed"</li>
+													</ul>
+												</td>
+												<td>
+													<ul>
+														<li>Stagnant status column for tables with colored labels</li>
+														<li>Remove highlighted rows, less overwhelming visually</li>
+													</ul
+												></td>
+											</tr>
+											<tr>
+												<td>
+													<ul>
+														<li>Global status filter - Active / Closed / All</li>
+														<li>Unable to filter out suspend</li>
+														<li>Misalignment of status as global filter is Active / Closed, table shows Open / Closed</li>
+													</ul>
+												</td>
+												<td>Moved to column filter, so the filter will correspond directly with what's in the column filter</td>
+											</tr>
+											<tr>
+												<td>
+													<ul>
+														<li>Open = Active / Active + Suspend</li>
+														<li>Closed = Closed / Closed + Suspended</li>
+													</ul>
+												</td>
+												<td>Closed > Suspended > Active</td>
+											</tr>
+											<tr class="icon-row">
+												<td><img class="cross" src="images/close.png" /></td>
+												<td><img class="tick" src="images/check.png" /></td>
+											</tr>
+										</table>
+									</section>
+								</div>
+
+								<div class="section-row title-row">
+									Tables -> Pagination
+								</div>
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/accountlist.png" data-fancybox="form-label" data-caption="Table -> Without Pagination"><img class="main" src="images/accountlist.png" /></a>
+										1) Load all data
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/table2.png" data-fancybox="form-label" data-caption="Table -> Pagination"><img class="main" src="images/table2.png" /></a>
+										<a class="image" href="images/pagination.png" data-fancybox="form-label" data-caption="Pagination"><img class="main" src="images/pagination.png" /></a>
+										2) Table with pagination
+									</section>
+									<section class="content border-left">
+										<table class="comparison">
+											<tr>
+												<th>1) Load all data in 1 go</th>
+												<th>2) Pagination</th>
+											</tr>
+											<tr>
+												<td>
+													Load all data at 1 go, good for if want to see a lot of data, but querying from backend could take a long time if there are many records
+												</td>
+												<td>
+													Pagination allow for only querying that amount of data from backend at 1 go, reducing loading speed, promoting scalability
+												</td>
+											</tr>
+											<tr>
+												<td>
+													
+												</td>
+												<td>Improve overall experience by giving users to freedom to select the number of rows to view per page</td>
+											</tr>
+											<tr>
+												<td>
+												</td>
+												<td><a href="https://www.primefaces.org/primevue/showcase/#/datatable/paginator" target="_blank">Link: PrimeVue Pagination</a></td>
+											</tr>
+											<tr class="icon-row">
+												<td><img class="cross" src="images/close.png" /></td>
+												<td><img class="tick" src="images/check.png" /></td>
+											</tr>
+										</table>
+									</section>
+								</div>		
+								
+								<div class="section-row title-row">
+									Tables -> Edit Single
+								</div>
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/edit_single_inline.png" data-fancybox="form-label" data-caption="Table -> Edit Inline"><img class="main" src="images/edit_single_inline.png" /></a>
+										1) Click on pencil icon -> Edit inline
+										<a class="image" href="images/primevue_edit_inline.png" data-fancybox="form-label" data-caption="Table -> Edit Inline (PrimeVue)"><img class="main" src="images/primevue_edit_inline.png" /></a>
+										2) Click directly on cells -> Edit inline
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/revamp_accountlist_edit.png" data-fancybox="form-label" data-caption="Table -> Edit New Row"><img class="main" src="images/revamp_accountlist_edit.png" /></a>
+										3) Click on pencil icon -> New edit row
+									</section>
+									<section class="content border-left">
+										<table class="comparison three-col">
+											<tr>
+												<th>1) Click on pencil icon -> Edit inline</th>
+												<th>2) Click directly on cells -> Edit inline</th>
+												<th>3) Click on pencil icon -> New edit row</th>
+											</tr>
+											<tr>
+												<td colspan="2">Saves space</td>
+												<td>Takes more space</td>
+											</tr>
+											<tr>
+												<td>Signify user that the row is editable</td>
+												<td>Unable to tell whether the table is editable unless user click around</td>
+												<td>Signify user that the row is editable</td>
+											</tr>
+											<tr>
+												<td colspan="2">On edited, enable to reference previous entered values unless user cancel</td>
+												<td>On edited, user still able to check previously entered value from row above</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td>Most importantly, when there are extra information, we can allocate space to it rather than squeezing under unrelated columns</td>
+											</tr>
+											<tr class="icon-row">
+												<td colspan="2"><img class="cross" src="images/close.png" /></td>
+												<td><img class="tick" src="images/check.png" /></td>
+											</tr>
+										</table>
+									</section>
+								</div>
+
+								<div class="section-row title-row">
+									Tables -> Bulk Edit
+								</div>
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/bet_settings.png" data-fancybox="form-label" data-caption="Table -> Bulk Edit"><img class="main" src="images/bet_settings.png" /></a>
+										1) Bulk edit in same page
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/revamp_full_transfer_select.png" data-fancybox="form-label" data-caption="Table -> Select Multiple"><img class="main" src="images/revamp_full_transfer_select.png" /></a>
+										<a class="image" href="images/revamp_full_transfer_edit.png" data-fancybox="form-label" data-caption="Table -> Bulk Edit Dialog"><img class="main" src="images/revamp_full_transfer_edit.png" /></a>
+										2) Bulk edit in dialog
+									</section>
+									<section class="content border-left">
+										<table class="comparison">
+											<tr>
+												<th>1) Bulk edit in same page</th>
+												<th>2) Bulk edit in dialog</th>
+											</tr>
+											<tr>
+												<td>
+													Select rows for editing, then scroll to bottom to edit in the same page
+												</td>
+												<td>
+													Select rows for editing, a section will appear in the bottom to show available actions
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Unusual bulk edit behaviour, especially if there's no pagination, user need to know the edit settings is on the bottom of the page
+												</td>
+												<td>User able to see available actions without scrolling the page</td>
+											</tr>
+											<tr class="icon-row">
+												<td><img class="cross" src="images/close.png" /></td>
+												<td><img class="tick" src="images/check.png" /></td>
+											</tr>
+										</table>
+									</section>
+								</div>
+							</div>
+
+							<div class="features form-labels">
+								<div class="section-row title-row">
+									Password policy
+								</div>
+								<div class="section-row">
+									<section class="content">
+										<a class="image" href="images/password_2.png" data-fancybox="form-label" data-caption="Simpler Password"><img class="main" src="images/password_2.png" /></a>
+										1) Simpler password policy
+									</section>
+									<section class="content border-left">
+										<a class="image" href="images/password3.png" data-fancybox="form-label" data-caption="More Complex Password Policy"><img class="main" src="images/password3.png" /></a>
+										2) A more complex password policy
+									</section>
+									<section class="content border-left">
+										<table class="comparison">
+											<tr>
+												<th>1) Simpler password policy</th>
+												<th>2) A more complex password policy</th>
+											</tr>
+											<tr>
+												<td>
+													Easier to fulfil requirements, less pain for user to come up with a password to fit the policy
+												</td>
+												<td>
+													Harder to fulfil requirements, thus stronger security
+												</td>
+											</tr>
+											<tr class="icon-row">
+												<td><img class="cross" src="images/close.png" /></td>
+												<td><img class="tick" src="images/check.png" /></td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<ul>
+														<li>Short length passwords are relatively easy to break, so the idea is to create lengthier ones for added security and to make them less predictable</li>
+														<li>A 2010 Georgia Tech Research Institute (GTRI) study told how a 12-character random password could satisfy a minimum length requirement to defeat code breaking and cracking software</li>
+														<li>Although 8-character passwords are insufficient without strong and complex combination. Alphanumerical characters, numbers and symbols will help to increase passwords strength, making it capable of resisting guessing and brute-force attacks</li>
+													</ul>
+												</td>
+												<td></td>
 											</tr>
 										</table>
 									</section>
