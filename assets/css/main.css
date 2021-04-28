@@ -92,7 +92,7 @@ input, select, textarea {
   ::-webkit-scrollbar-thumb:hover {
 	background-color: #a8bbbf;
   }
-  
+
 /* Basic */
 
 	@-ms-viewport {
@@ -137,7 +137,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
+		color: rgba(255, 255, 255, 0.75);
 		font-family: 'Lato', sans-serif;
 		font-size: 14.5pt;
 		font-weight: 300;
@@ -1920,7 +1920,7 @@ input, select, textarea {
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: rgba(255, 255, 255, 0.35) !important;
 		border-radius: 3em;
 		color: #ffffff !important;
 		cursor: pointer;
